@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.6](https://gitee.com/newgateway/vtj/compare/create-vtj@0.10.5...create-vtj@0.10.6) (2025-03-13)
+
+
+### Features
+
+* ✨ 物料开发工程模版 ([b1e88e8](https://gitee.com/newgateway/vtj/commits/b1e88e852df84586600a5a0ef00a89bed55bc8b6))
+
+
+
+
+
+## [0.10.5](https://gitee.com/newgateway/vtj/compare/create-vtj@0.10.4...create-vtj@0.10.5) (2025-03-11)
+
+
+### Bug Fixes
+
+* 🐛 更新uniapp依赖, 优化renderer ([463b1f7](https://gitee.com/newgateway/vtj/commits/463b1f7419b5373c514eaaf285a989c5220f7934))
+
+
+### Features
+
+* ✨ uniapp 支持微信小程序 ([ca67024](https://gitee.com/newgateway/vtj/commits/ca6702490867df9badb5f045aee76c2df14f2052))
+
+
+
+
+
 ## [0.10.4](https://gitee.com/newgateway/vtj/compare/create-vtj@0.10.3...create-vtj@0.10.4) (2025-03-04)
 
 **Note:** Version bump only for package create-vtj

@@ -3,6 +3,45 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.10.13](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.10.12...@vtj/designer@0.10.13) (2025-03-13)
+
+
+### Features
+
+* ✨ 物料开发示例工程 ([936fc1f](https://gitee.com/newgateway/vtj/commits/936fc1fe6afcd22cee0c988a88cba389bd583439))
+
+
+
+
+
+## [0.10.12](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.10.11...@vtj/designer@0.10.12) (2025-03-11)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
+## [0.10.11](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.10.10...@vtj/designer@0.10.11) (2025-03-11)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
+## [0.10.10](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.10.9...@vtj/designer@0.10.10) (2025-03-07)
+
+
+### Bug Fixes
+
+* 🐛 html2canvas useCORS ([88d9244](https://gitee.com/newgateway/vtj/commits/88d9244f4ff4365b4b8c5b9c4db60fb10c91b1ea))
+* 🐛 v-item 内容过长导致的样式问题 ([1a5d378](https://gitee.com/newgateway/vtj/commits/1a5d378677e767289f1f91ee720881b86c2825da))
+
+
+
+
+
 ## [0.10.9](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.10.8...@vtj/designer@0.10.9) (2025-03-04)
 
 **Note:** Version bump only for package @vtj/designer
