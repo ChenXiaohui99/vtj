@@ -3,6 +3,137 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.11](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.10...@vtj/coder@0.11.11) (2025-03-28)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.10](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.9...@vtj/coder@0.11.10) (2025-03-27)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.9](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.8...@vtj/coder@0.11.9) (2025-03-27)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.8](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.7...@vtj/coder@0.11.8) (2025-03-27)
+
+
+### Features
+
+* ✨ report 模块,修复access和style出码bug ([db401ee](https://gitee.com/newgateway/vtj/commits/db401ee22a2c2fb85f4867755047966164b8e9f8))
+
+
+
+
+
+## [0.11.7](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.6...@vtj/coder@0.11.7) (2025-03-25)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.6](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.5...@vtj/coder@0.11.6) (2025-03-21)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.5](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.4...@vtj/coder@0.11.5) (2025-03-20)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.4](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.3...@vtj/coder@0.11.4) (2025-03-19)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.3](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.2...@vtj/coder@0.11.3) (2025-03-19)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.2](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.1...@vtj/coder@0.11.2) (2025-03-19)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.1](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.1-alpha.1...@vtj/coder@0.11.1) (2025-03-18)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.1-alpha.1](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.1-alpha.0...@vtj/coder@0.11.1-alpha.1) (2025-03-18)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.11.1-alpha.0](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.11.0...@vtj/coder@0.11.1-alpha.0) (2025-03-18)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+# [0.11.0](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.10.15...@vtj/coder@0.11.0) (2025-03-17)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.10.15](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.10.14...@vtj/coder@0.10.15) (2025-03-14)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.10.14](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.10.13...@vtj/coder@0.10.14) (2025-03-14)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
 ## [0.10.13](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.10.12...@vtj/coder@0.10.13) (2025-03-13)
 
 **Note:** Version bump only for package @vtj/coder

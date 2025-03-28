@@ -11,8 +11,17 @@
     depsManager,
     type BlockFile
   } from '@vtj/pro';
-  import { ElMessageBox } from 'element-plus';
-  import { project, name, version, library, material } from '../../vtj.config';
+  import { notify, loading, Startup } from '@vtj/web';
+  import { useTitle } from '@vueuse/core';
+  import {
+    project,
+    name,
+    version,
+    library,
+    material,
+    outputLibrary,
+    outputMaterial
+  } from '../../vtj.config';
 
   widgetManager.set('Previewer', {
     props: {
@@ -25,7 +34,7 @@
   widgetManager.set('Switcher', {
     props: {
       onClick() {
-        location.href = '/#/view';
+        location.href = '/#/';
       }
     }
   });
@@ -35,19 +44,15 @@
     platform: project.platform,
     version,
     library,
-    urls: ['dist/style.css', 'dist/index.umd.js'],
-    assetsUrl: 'dist/material.umd.js',
+    urls: outputLibrary,
+    assetsUrl: outputMaterial,
     assetsLibrary: material,
     enabled: true
   });
 
   const container = ref();
   const service = new StorageService();
-  const adapter = createAdapter({
-    access: {
-      alert: ElMessageBox.alert
-    }
-  });
+  const adapter = createAdapter({ loading, notify, Startup, useTitle });
   const engine = new Engine({
     container,
     service,
