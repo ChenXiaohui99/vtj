@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.11.13](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.11.12...@vtj/renderer@0.11.13) (2025-04-02)
+
+
+### Bug Fixes
+
+* 🐛 不采集非vtj请求的错误信息 ([61ce992](https://gitee.com/newgateway/vtj/commits/61ce9922cd7bae5fb4aed7fd50fd386629b4aedd))
+
+
+
+
+
+## [0.11.12](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.11.11...@vtj/renderer@0.11.12) (2025-03-28)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
 ## [0.11.11](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.11.10...@vtj/renderer@0.11.11) (2025-03-28)
 
 **Note:** Version bump only for package @vtj/renderer
