@@ -3,6 +3,44 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.8](https://gitee.com/newgateway/vtj/compare/dev-web@0.12.7...dev-web@0.12.8) (2025-04-29)
+
+
+### Features
+
+* ✨ AI 图生代码 ([dd7fee5](https://gitee.com/newgateway/vtj/commits/dd7fee5c281ed9fce05cad14ae8ec2c37b9f0b0c))
+
+
+
+
+
+## [0.12.7](https://gitee.com/newgateway/vtj/compare/dev-web@0.12.6...dev-web@0.12.7) (2025-04-27)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.12.6](https://gitee.com/newgateway/vtj/compare/dev-web@0.12.5...dev-web@0.12.6) (2025-04-25)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.12.5](https://gitee.com/newgateway/vtj/compare/dev-web@0.12.4...dev-web@0.12.5) (2025-04-25)
+
+
+### Bug Fixes
+
+* 🐛 设计器接入指南 ([bd08152](https://gitee.com/newgateway/vtj/commits/bd081521d049176dfc334305a7829780363b0d81))
+
+
+
+
+
 ## [0.12.4](https://gitee.com/newgateway/vtj/compare/dev-web@0.12.3...dev-web@0.12.4) (2025-04-23)
 
 **Note:** Version bump only for package dev-web

@@ -69,7 +69,8 @@
         :model-value="promptText"
         :disabled="inputDisabled"
         :fillPromptInput="fillPromptInput"
-        @send="onPostTopic"></NewTopic>
+        @send="onPostTopic"
+        @image-send="onPostImageTopic"></NewTopic>
 
       <div v-if="!isNewChat" ref="listRef" class="v-ai-widget__bubble-list">
         <template v-for="chat of chats" :key="chat.id">
@@ -150,11 +151,11 @@
     <InviteTip
       v-if="settings"
       :settings="settings"
-      :remote="engine.remote"></InviteTip>
+      :get-image="getImage"></InviteTip>
     <PayTip
       v-if="settings"
       :settings="settings"
-      :remote="engine.remote"
+      :get-image="getImage"
       :create-order="createOrder"
       :cancel-order="cancelOrder"
       :get-order="getOrder"></PayTip>
@@ -223,7 +224,9 @@
     createOrder,
     cancelOrder,
     getOrder,
-    updateChatDsl
+    updateChatDsl,
+    getImage,
+    onPostImageTopic
   } = useAI();
 
   const logined = ref(true);

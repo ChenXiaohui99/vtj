@@ -1,6 +1,11 @@
-import { type JSExpression, type JSFunction } from '@vtj/core';
+import {
+  type JSExpression,
+  type JSFunction,
+  type PlatformType
+} from '@vtj/core';
 import { upperFirstCamelCase } from '@vtj/base';
 export interface ExpressionOptions {
+  platform: PlatformType;
   context: Record<string, Set<string>>;
   computed: string[];
   libs: Record<string, string>;
@@ -13,7 +18,8 @@ export function replacer(content: string, key: string, to: string) {
   const r2 = /(\@\_|\$|\.|\,|\w)$/;
   // 关键字后的字符
   const r3 = /^\w/;
-  return content.replace(r1, (str, index, source) => {
+  const r4 = new RegExp(`^this\.${key}$`, 'g');
+  const result = content.replace(r1, (str, index, source) => {
     const start = source.substring(0, index);
     const end = source.substring(index + key.length);
     // 前后字符符合正则的不替换
@@ -22,6 +28,10 @@ export function replacer(content: string, key: string, to: string) {
     }
     return to;
   });
+
+  return result.replace(r4, to);
+
+  return result;
 }
 
 export function patchCode(
@@ -33,7 +43,8 @@ export function patchCode(
     context = {},
     computed = [],
     libs = {},
-    members = []
+    members = [],
+    platform
   } = options || {};
   const contextKeys = Array.from(context[id || ''] || new Set());
 
@@ -53,6 +64,11 @@ export function patchCode(
 
   for (const key of members) {
     content = replacer(content, key, `this.${key}`);
+  }
+
+  if (platform === 'uniapp') {
+    const uniRegex = /\buni\./g;
+    content = content.replace(uniRegex, 'this.$libs.UniH5.uni.');
   }
 
   // 兜底
@@ -100,8 +116,20 @@ export const HTML_TAGS =
 
 export const BUILD_IN_TAGS = 'component,slot,template'.split(',');
 
-export function formatTagName(tag: string) {
-  if (HTML_TAGS.includes(tag) || BUILD_IN_TAGS.includes(tag)) {
+export const UNI_TAGS =
+  'view,swiper,progress,icon,text,button,checkbox,editor,form,input,label,picker,radio,slider,switch,textarea,audio,camera,image,video,map,canvas'.split(
+    ','
+  );
+
+export function isUniTags(tag: string, platform: PlatformType = 'web') {
+  return platform === 'uniapp' && UNI_TAGS.includes(tag);
+}
+
+export function formatTagName(tag: string, platform: PlatformType = 'web') {
+  if (
+    (HTML_TAGS.includes(tag) || BUILD_IN_TAGS.includes(tag)) &&
+    !isUniTags(tag, platform)
+  ) {
     return tag;
   }
   return upperFirstCamelCase(tag);
@@ -110,4 +138,15 @@ export function formatTagName(tag: string) {
 export function isScss(source: string) {
   const regex = /style lang=\"scss\"/;
   return regex.test(source);
+}
+
+export function styleToJson(style: string) {
+  const cleaned = style.replace(/\s+/g, ' ');
+  return cleaned.split(';').reduce((acc: Record<string, string>, current) => {
+    const [property, value] = current.split(':').map((item) => item.trim());
+    if (property && value) {
+      acc[property] = value;
+    }
+    return acc;
+  }, {});
 }

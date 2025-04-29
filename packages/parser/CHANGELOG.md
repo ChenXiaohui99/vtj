@@ -3,6 +3,58 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.8](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.7...@vtj/parser@0.12.8) (2025-04-29)
+
+
+### Bug Fixes
+
+* 🐛 parser html style bug ([d8dd06f](https://gitee.com/newgateway/vtj/commits/d8dd06f0e682ce3d358b8a1130f19f936c3d2cba))
+
+
+### Features
+
+* ✨ AI 图生代码 ([dd7fee5](https://gitee.com/newgateway/vtj/commits/dd7fee5c281ed9fce05cad14ae8ec2c37b9f0b0c))
+
+
+
+
+
+## [0.12.7](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.6...@vtj/parser@0.12.7) (2025-04-27)
+
+
+### Bug Fixes
+
+* 🐛 uniapp coder ([3b88493](https://gitee.com/newgateway/vtj/commits/3b8849388d6c24bdde10ce7d82615275063dae64))
+
+
+
+
+
+## [0.12.6](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.5...@vtj/parser@0.12.6) (2025-04-25)
+
+
+### Bug Fixes
+
+* 🐛 文本和表达式合成 ([6452a85](https://gitee.com/newgateway/vtj/commits/6452a859baa6e65c6ca8de40f93d432f2e7fa7c8))
+
+
+
+
+
+## [0.12.5](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.4...@vtj/parser@0.12.5) (2025-04-25)
+
+
+### Bug Fixes
+
+* 🐛 设计器接入指南 ([bd08152](https://gitee.com/newgateway/vtj/commits/bd081521d049176dfc334305a7829780363b0d81))
+* 🐛 修复html解析片段丢失问题 ([7899df2](https://gitee.com/newgateway/vtj/commits/7899df2747b37f28c761c52224d6a18fd0992e34))
+* 🐛 优化提示词 ([e948bea](https://gitee.com/newgateway/vtj/commits/e948bea7488a823e5baaabc40f35a722db8245fc))
+* 🐛 parser computed error ([964f8a7](https://gitee.com/newgateway/vtj/commits/964f8a7184c5298652878022fa98ded6a68cae85))
+
+
+
+
+
 ## [0.12.4](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.3...@vtj/parser@0.12.4) (2025-04-23)
 
 

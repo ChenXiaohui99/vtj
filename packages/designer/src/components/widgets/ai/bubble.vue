@@ -30,10 +30,10 @@
             </div>
           </div>
           <div v-if="props.data.message" class="v-ai-widget-bubble__message">
-            <pre>
-              {{ props.data.message }}
-            </pre>
-            <ElButton size="small" round @click="onFix">纠正错误</ElButton>
+            <div>{{ props.data.message }}</div>
+            <ElButton v-if="isError" size="small" round @click="onFix">
+              纠正错误
+            </ElButton>
           </div>
           <ElButton
             v-if="isPending"
@@ -44,7 +44,8 @@
             circle></ElButton>
         </template>
         <div v-else>
-          <pre>{{ props.data.prompt }}</pre>
+          <ElImage v-if="props.data.image" :src="props.data.image"></ElImage>
+          <pre v-else>{{ props.data.prompt }}</pre>
         </div>
       </div>
       <div v-if="isAi" class="v-ai-widget-bubble__tools">
@@ -61,7 +62,7 @@
 </template>
 <script setup lang="ts">
   import { computed, ref, watch } from 'vue';
-  import { ElAvatar, ElButton, ElTag } from 'element-plus';
+  import { ElAvatar, ElButton, ElTag, ElImage } from 'element-plus';
   import Avatar from './avatar.vue';
   import {
     VtjIconAi,
@@ -89,6 +90,7 @@
   const isAi = computed(() => props.type === 'ai');
   const isCompleted = computed(() => props.data.status === 'Success');
   const isPending = computed(() => props.data.status === 'Pending');
+  const isError = computed(() => props.data.status === 'Error');
   const collasped = ref(props.data.collapsed);
   const collaspedIcon = computed(() =>
     collasped.value ? ArrowDownBold : ArrowUpBold

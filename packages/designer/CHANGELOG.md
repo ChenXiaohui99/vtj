@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.8](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.7...@vtj/designer@0.12.8) (2025-04-29)
+
+
+### Features
+
+* ✨ AI 图生代码 ([dd7fee5](https://gitee.com/newgateway/vtj/commits/dd7fee5c281ed9fce05cad14ae8ec2c37b9f0b0c))
+
+
+
+
+
+## [0.12.7](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.6...@vtj/designer@0.12.7) (2025-04-27)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
+## [0.12.6](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.5...@vtj/designer@0.12.6) (2025-04-25)
+
+
+### Bug Fixes
+
+* 🐛 文本和表达式合成 ([6452a85](https://gitee.com/newgateway/vtj/commits/6452a859baa6e65c6ca8de40f93d432f2e7fa7c8))
+* 🐛 completions error ([14fc87c](https://gitee.com/newgateway/vtj/commits/14fc87c76dbec059330285b9d83a4d3bdacae441))
+* 🐛 saveChat 异常处理 ([a3f4565](https://gitee.com/newgateway/vtj/commits/a3f45656bb5cd2fbf32a79de97415751b32516bd))
+* 🐛 updateChatDsl异常处理 ([7ea5bc8](https://gitee.com/newgateway/vtj/commits/7ea5bc8ff5afa135643998672ce82ee1b47134eb))
+
+
+
+
+
+## [0.12.5](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.4...@vtj/designer@0.12.5) (2025-04-25)
+
+
+### Bug Fixes
+
+* 🐛 设计器接入指南 ([bd08152](https://gitee.com/newgateway/vtj/commits/bd081521d049176dfc334305a7829780363b0d81))
+* 🐛 优化样式 ([62895ec](https://gitee.com/newgateway/vtj/commits/62895ecc2f7bf11e342b7ae26ecb2d747263d1ea))
+* 🐛 vue2Dsl未处理异常 ([f323395](https://gitee.com/newgateway/vtj/commits/f3233951ae218817a6434f86a853039fe838532e))
+
+
+
+
+
 ## [0.12.4](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.3...@vtj/designer@0.12.4) (2025-04-23)
 
 **Note:** Version bump only for package @vtj/designer

@@ -22,6 +22,12 @@ export interface AISendData {
   prompt: string;
 }
 
+export interface AISendImageData {
+  model: string;
+  auto: boolean;
+  file: File;
+}
+
 function useDict(code: string, getDictOptions: (code: string) => Promise<any>) {
   const result: Ref<DictOption[]> = ref([]);
   if (getDictOptions) {
@@ -33,18 +39,43 @@ function useDict(code: string, getDictOptions: (code: string) => Promise<any>) {
   return result;
 }
 
+async function createCommonDto(engine: UseAIOptions['engine']) {
+  const projectDsl = engine.project.value?.toDsl() as ProjectSchema;
+  const dsl = engine.current.value?.toDsl() as BlockSchema;
+  const source = await engine.service.genVueContent(projectDsl, dsl);
+  return {
+    projectDsl,
+    dsl,
+    source
+  };
+}
+
 async function createTopicDto(
   data: AISendData,
   engine: UseAIOptions['engine']
 ) {
-  const { model, prompt } = data;
-  const projectDsl = engine.project.value?.toDsl() as ProjectSchema;
-  const dsl = engine.current.value?.toDsl() as BlockSchema;
-  const source = await engine.service.genVueContent(projectDsl, dsl);
+  const { model, prompt = '' } = data;
+  const { projectDsl, dsl, source } = await createCommonDto(engine);
 
   const dto: TopicDto = {
     model,
     prompt,
+    dsl: JSON.stringify(dsl),
+    project: JSON.stringify(projectDsl),
+    source
+  };
+  return dto;
+}
+
+async function createImageTopicDto(
+  data: AISendImageData,
+  engine: UseAIOptions['engine']
+) {
+  const { model, file } = data;
+  const { projectDsl, dsl, source } = await createCommonDto(engine);
+  const dto: TopicDto = {
+    model,
+    file,
     dsl: JSON.stringify(dsl),
     project: JSON.stringify(projectDsl),
     source
@@ -68,7 +99,9 @@ export function useAI() {
     getSettins,
     createOrder,
     cancelOrder,
-    getOrder
+    getOrder,
+    getImage,
+    postImageTopic
   } = useOpenApi();
   const hideCodeCacheKey = 'CHAT_HIDE_CODE';
   const region = engine.skeleton?.getRegion('Apps').regionRef;
@@ -98,6 +131,10 @@ export function useAI() {
   const loadChats = async (topicId: string) => {
     const res = await getChats(topicId);
     if (res && res.success) {
+      const data = res.data || [];
+      if (data[0] && currentTopic.value?.image) {
+        data[0].image = getImage(currentTopic.value.image);
+      }
       chats.value = res.data;
     }
   };
@@ -133,6 +170,37 @@ export function useAI() {
       topics.value.unshift(topic);
       isNewChat.value = false;
       currentTopic.value = topic;
+      const rChat = reactive(chat);
+      chats.value.push(rChat);
+      completions(rChat, (c) => {
+        if (data.auto) {
+          onApply(c);
+        }
+      });
+      await delay(0);
+      if (panelRef.value) {
+        panelRef.value.scrollToBottom();
+      }
+    } else {
+      await init(null);
+    }
+    return res;
+  };
+
+  const onPostImageTopic = async (data: AISendImageData) => {
+    loading.value = true;
+    const dto = await createImageTopicDto(data, engine);
+    const res = await postImageTopic(dto);
+    loading.value = false;
+    if (res && res.success) {
+      const { topic, chat } = res.data;
+      chats.value = [];
+      topics.value.unshift(topic);
+      isNewChat.value = false;
+      currentTopic.value = topic;
+      if (topic.image) {
+        chat.image = getImage(topic.image);
+      }
       const rChat = reactive(chat);
       chats.value.push(rChat);
       completions(rChat, (c) => {
@@ -196,6 +264,7 @@ export function useAI() {
     const project = engine.project.value?.toDsl() as ProjectSchema;
     const { name = '' } = engine.current.value || {};
     const source = getVueCode(chat.content);
+    if (!source) return;
     return await engine.service.parseVue(project, {
       id,
       name,
@@ -250,8 +319,9 @@ export function useAI() {
           });
           if (dsl) {
             try {
-              chat.dsl = dsl;
+              chat.dsl = typeof dsl === 'object' ? dsl : JSON.parse(dsl);
             } catch (err: any) {
+              chat.dsl = null;
               chat.status = 'Error';
               chat.message = err?.message;
             }
@@ -262,8 +332,13 @@ export function useAI() {
       },
       async (err: any) => {
         const message = err.message || err.name || '未知错误';
-        chat.message = message;
+        if (message === 'network error') {
+          chat.message = '网络异常，请稍后再试';
+        } else {
+          chat.message = '请求失败，请稍后再试';
+        }
         chat.status = 'Failed';
+        console.warn('completions error', err);
         await saveChat(chat);
         complete && complete(chat);
       }
@@ -277,7 +352,7 @@ export function useAI() {
   };
 
   const updateChatDsl = async (source: string) => {
-    if (!currentTopic.value || !currentChat.value) return;
+    if (!currentTopic.value || !currentChat.value || !source) return;
     const id = currentTopic.value?.fileId as string;
     const project = engine.project.value?.toDsl() as ProjectSchema;
     const { name = '' } = engine.current.value || {};
@@ -293,7 +368,11 @@ export function useAI() {
     if (Array.isArray(dsl)) {
       return Promise.reject(dsl);
     } else {
-      currentChat.value.dsl = dsl;
+      try {
+        currentChat.value.dsl = typeof dsl === 'object' ? dsl : JSON.parse(dsl);
+      } catch (e) {
+        currentChat.value.dsl = null;
+      }
       await saveChat(currentChat.value);
       return dsl;
     }
@@ -366,6 +445,19 @@ export function useAI() {
     }
   };
 
+  // const uploadImage = async (file: File) => {
+  //   const res = await uploader(file);
+  //   return res?.data;
+  // };
+
+  // const postImageTopic = async (data: AISendImageData) => {
+  //   const { file } = data;
+  //   loading.value = true;
+  //   const url = await uploadImage(file);
+
+  //   console.log(url);
+  // };
+
   watch(
     () => region?.active,
     (widget) => {
@@ -430,6 +522,8 @@ export function useAI() {
     createOrder,
     cancelOrder,
     getOrder,
-    updateChatDsl
+    updateChatDsl,
+    getImage,
+    onPostImageTopic
   };
 }

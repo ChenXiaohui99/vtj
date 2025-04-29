@@ -5,7 +5,8 @@ import {
   type JSExpression,
   type NodeDirective,
   type BlockSlot,
-  type JSFunction
+  type JSFunction,
+  type PlatformType
 } from '@vtj/core';
 import { compileTemplate } from '@vue/compiler-sfc';
 import {
@@ -16,11 +17,17 @@ import {
   type ElementNode,
   type IfNode,
   type ForNode,
-  type IfConditionalExpression
+  type IfConditionalExpression,
+  type CompoundExpressionNode
 } from '@vue/compiler-core';
 import { uid } from '@vtj/base';
 import { isJSExpression, isNodeSchema } from '../shared';
-import { getJSExpression, getJSFunction, formatTagName } from './utils';
+import {
+  getJSExpression,
+  getJSFunction,
+  formatTagName,
+  styleToJson
+} from './utils';
 import type { CSSRules } from './style';
 import { htmlToNodes } from './html';
 
@@ -28,8 +35,10 @@ let __slots: BlockSlot[] = [];
 let __context: Record<string, Set<string>> = {};
 let __handlers: Record<string, JSFunction> = {};
 let __styles: CSSRules = {};
+let __platform: PlatformType = 'web';
 
 export interface ParseTemplateOptions {
+  platform: PlatformType;
   handlers?: Record<string, JSFunction>;
   styles?: CSSRules;
 }
@@ -44,7 +53,7 @@ export function parseTemplate(
   __context = {};
   __handlers = options?.handlers || {};
   __styles = options?.styles || {};
-
+  __platform = options?.platform || 'web';
   const result = compileTemplate({
     id,
     filename: name,
@@ -77,17 +86,6 @@ function pickSlot(node: NodeSchema) {
       params
     });
   }
-}
-
-function styleToJson(style: string) {
-  const cleaned = style.replace(/\s+/g, ' ');
-  return cleaned.split(';').reduce((acc: Record<string, string>, current) => {
-    const [property, value] = current.split(':').map((item) => item.trim());
-    if (property && value) {
-      acc[property] = value;
-    }
-    return acc;
-  }, {});
 }
 
 function getProps(nodes: Array<AttributeNode | DirectiveNode>) {
@@ -312,7 +310,7 @@ function createNodeSchema(
   scope?: IfNode | ForNode
 ) {
   const dsl: NodeSchema = {
-    name: formatTagName(node.tag),
+    name: formatTagName(node.tag, __platform),
     props: getProps(node.props),
     events: getEvents(node.props, __handlers),
     directives: getDirectives(scope || node)
@@ -382,12 +380,36 @@ function transformNode(
 
   // 文本和表达式合成
   if (node.type === NodeTypes.COMPOUND_EXPRESSION) {
-    // 暂不处理这种情况
-    console.warn('未处理节点', node);
+    return transformCompoundExpression(
+      node.children as CompoundExpressionNode[]
+    );
+  }
+
+  // 注释，忽略
+  if (node.type === NodeTypes.COMMENT) {
+    return null;
   }
 
   console.warn('未处理', node.type);
   return null;
+}
+
+function transformCompoundExpression(children: CompoundExpressionNode[] = []) {
+  const nodes = children.filter((n) => typeof n !== 'string');
+  const result: NodeSchema[] = [];
+  for (const node of nodes) {
+    result.push({
+      name: 'span',
+      children:
+        (node as any).type === NodeTypes.TEXT
+          ? node.loc.source
+          : getJSExpression((node as any).content?.loc.source)
+    });
+  }
+  return {
+    name: 'span',
+    children: result
+  };
 }
 
 function transformChildren(
