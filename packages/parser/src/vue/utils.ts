@@ -15,7 +15,7 @@ export interface ExpressionOptions {
 export function replacer(content: string, key: string, to: string) {
   const r1 = new RegExp(`${key}`, 'g');
   // 关键字前的字符
-  const r2 = /(\@\_|\$|\.|\,|\w)$/;
+  const r2 = /(\@\_|\$|\.|\,|\w|\{\s)$/;
   // 关键字后的字符
   const r3 = /^\w/;
   const r4 = new RegExp(`^this\.${key}$`, 'g');
@@ -23,7 +23,7 @@ export function replacer(content: string, key: string, to: string) {
     const start = source.substring(0, index);
     const end = source.substring(index + key.length);
     // 前后字符符合正则的不替换
-    if (r2.test(start.trim()) || r3.test(end.trim())) {
+    if (r2.test(start) || r3.test(end.trim())) {
       return str;
     }
     return to;
@@ -160,4 +160,28 @@ export function validate(content: string) {
   }
 
   return errors;
+}
+
+export function mergeClass(
+  staticClass: string,
+  expSource: string,
+  type: 'ObjectExpression' | 'ArrayExpression'
+) {
+  if (type === 'ObjectExpression') {
+    const staticStr = staticClass
+      .split(' ')
+      .map((item) => {
+        return `'${item}': true`;
+      })
+      .join(',');
+    return `(Object.assign({${staticStr}}, ${expSource}))`;
+  } else if (type === 'ArrayExpression') {
+    const staticStr = staticClass
+      .split(' ')
+      .map((item) => {
+        return `'${item}'`;
+      })
+      .join(',');
+    return `([${staticStr}].concat(${expSource}))`;
+  }
 }

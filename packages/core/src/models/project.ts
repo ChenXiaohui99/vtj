@@ -77,6 +77,7 @@ export const EVENT_PROJECT_GEN_SOURCE = 'EVENT_PROJECT_GEN_SOURCE';
 
 export class ProjectModel {
   id: string = '';
+  locked: string = '';
   platform: PlatformType = 'web';
   name: string = '';
   description: string = '';
@@ -92,6 +93,7 @@ export class ProjectModel {
   __BASE_PATH__: string = '/';
   __UID__: string = uuid(true);
   static attrs: string[] = [
+    'locked',
     'platform',
     'name',
     'homepage',
@@ -362,6 +364,7 @@ export class ProjectModel {
    */
   updatePage(page: PageFile, silent: boolean = false) {
     const match = this.getPage(page.id);
+    delete page.dsl;
     if (match) {
       Object.assign(match, page);
     } else {
@@ -788,5 +791,27 @@ export class ProjectModel {
       data: null
     };
     emitter.emit(EVENT_PROJECT_GEN_SOURCE, event);
+  }
+
+  lock(id: string) {
+    this.locked = id;
+    const event: ProjectModelEvent = {
+      model: this,
+      type: 'update',
+      data: id
+    };
+    emitter.emit(EVENT_PROJECT_CHANGE, event);
+  }
+  unlock(id: string) {
+    if (id !== this.locked) {
+      return;
+    }
+    this.locked = '';
+    const event: ProjectModelEvent = {
+      model: this,
+      type: 'update',
+      data: null
+    };
+    emitter.emit(EVENT_PROJECT_CHANGE, event);
   }
 }

@@ -46,10 +46,12 @@ export async function parseVue(options: IParseVueOptions) {
     imports,
     dataSources
   } = parseScripts(sfc.script, project);
+
   const { nodes, slots, context } = parseTemplate(id, name, sfc.template, {
     platform,
     handlers,
-    styles
+    styles,
+    imports
   });
 
   const dsl: BlockSchema = {
@@ -222,12 +224,19 @@ function parseDeps(
     {} as Record<string, string>
   );
   for (const { from, imports: names } of imports) {
-    names.forEach((name) => {
+    if (Array.isArray(names)) {
+      names.forEach((name) => {
+        const library = depsMap[from];
+        if (library) {
+          libs[name] = library;
+        }
+      });
+    } else {
       const library = depsMap[from];
       if (library) {
-        libs[name] = library;
+        libs[names] = library;
       }
-    });
+    }
   }
   return {
     libs

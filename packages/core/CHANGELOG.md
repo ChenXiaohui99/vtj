@@ -3,6 +3,136 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.24](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.23...@vtj/core@0.12.24) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.23](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.22...@vtj/core@0.12.23) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.22](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.21...@vtj/core@0.12.22) (2025-05-20)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.21](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.20...@vtj/core@0.12.21) (2025-05-16)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.20](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.19...@vtj/core@0.12.20) (2025-05-15)
+
+
+### Features
+
+* ✨ 支持项目锁定 ([5aa88ed](https://gitee.com/newgateway/vtj/commits/5aa88edfc37caa9ea5c61e5d54636876444a631c))
+* ✨ 支持应用增强配置 ([7abb434](https://gitee.com/newgateway/vtj/commits/7abb4349377ef268d6ff7e92691384c0d7980214))
+
+
+
+
+
+## [0.12.19](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.18...@vtj/core@0.12.19) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.18](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.17...@vtj/core@0.12.18) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.17](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.16...@vtj/core@0.12.17) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.16](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.15...@vtj/core@0.12.16) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.15](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.14...@vtj/core@0.12.15) (2025-05-07)
+
+
+### Bug Fixes
+
+* 🐛 修改也信息导致dsl偶发丢失 ([96accbc](https://gitee.com/newgateway/vtj/commits/96accbcf83792d20a00770c9b1cf4cbbb637da9a))
+
+
+
+
+
+## [0.12.14](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.13...@vtj/core@0.12.14) (2025-05-07)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.13](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.12...@vtj/core@0.12.13) (2025-05-06)
+
+
+### Bug Fixes
+
+* 🐛 icons import miss ([a610c53](https://gitee.com/newgateway/vtj/commits/a610c53c5944dc3dd1b3ef556001e4c70a36f5a3))
+
+
+
+
+
+## [0.12.12](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.11...@vtj/core@0.12.12) (2025-05-06)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.11](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.10...@vtj/core@0.12.11) (2025-05-05)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.10](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.9...@vtj/core@0.12.10) (2025-04-30)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
 ## [0.12.9](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.8...@vtj/core@0.12.9) (2025-04-29)
 
 **Note:** Version bump only for package @vtj/core

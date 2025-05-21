@@ -3,6 +3,138 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.24](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.23...@vtj/renderer@0.12.24) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.23](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.22...@vtj/renderer@0.12.23) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.22](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.21...@vtj/renderer@0.12.22) (2025-05-20)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.21](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.20...@vtj/renderer@0.12.21) (2025-05-16)
+
+
+### Bug Fixes
+
+* 🐛 renderer injects 失效问题 ([5f50c7e](https://gitee.com/newgateway/vtj/commits/5f50c7e1e7fabd59b36571dad2fb076417283341))
+
+
+
+
+
+## [0.12.20](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.19...@vtj/renderer@0.12.20) (2025-05-15)
+
+
+### Features
+
+* ✨ 支持应用增强配置 ([7abb434](https://gitee.com/newgateway/vtj/commits/7abb4349377ef268d6ff7e92691384c0d7980214))
+
+
+
+
+
+## [0.12.19](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.18...@vtj/renderer@0.12.19) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.18](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.17...@vtj/renderer@0.12.18) (2025-05-12)
+
+
+### Bug Fixes
+
+* 🐛 parser utils ([03abd89](https://gitee.com/newgateway/vtj/commits/03abd89054d2daa55345024669a859f8585f8980))
+
+
+
+
+
+## [0.12.17](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.16...@vtj/renderer@0.12.17) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.16](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.15...@vtj/renderer@0.12.16) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.15](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.14...@vtj/renderer@0.12.15) (2025-05-07)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.14](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.13...@vtj/renderer@0.12.14) (2025-05-07)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.13](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.12...@vtj/renderer@0.12.13) (2025-05-06)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.12](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.11...@vtj/renderer@0.12.12) (2025-05-06)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.11](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.10...@vtj/renderer@0.12.11) (2025-05-05)
+
+
+### Features
+
+* ✨ 支持v-else-if 和 v-else 代码分支 ([6965137](https://gitee.com/newgateway/vtj/commits/69651374b83bffd4bb65f4e8d7de82eb4dc87e7d))
+
+
+
+
+
+## [0.12.10](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.9...@vtj/renderer@0.12.10) (2025-04-30)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
 ## [0.12.9](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.8...@vtj/renderer@0.12.9) (2025-04-29)
 
 **Note:** Version bump only for package @vtj/renderer

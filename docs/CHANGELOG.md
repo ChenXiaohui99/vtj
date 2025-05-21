@@ -3,6 +3,133 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.24](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.23...@vtj/docs@0.12.24) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.23](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.22...@vtj/docs@0.12.23) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.22](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.21...@vtj/docs@0.12.22) (2025-05-20)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.21](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.20...@vtj/docs@0.12.21) (2025-05-16)
+
+
+### Bug Fixes
+
+* 🐛 parser ([146cb3c](https://gitee.com/newgateway/vtj/commits/146cb3c2258715af338e97547129c1defd3bf882))
+* 🐛 renderer injects 失效问题 ([5f50c7e](https://gitee.com/newgateway/vtj/commits/5f50c7e1e7fabd59b36571dad2fb076417283341))
+
+
+
+
+
+## [0.12.20](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.19...@vtj/docs@0.12.20) (2025-05-15)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.19](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.18...@vtj/docs@0.12.19) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.18](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.17...@vtj/docs@0.12.18) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.17](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.16...@vtj/docs@0.12.17) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.16](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.15...@vtj/docs@0.12.16) (2025-05-12)
+
+
+### Bug Fixes
+
+* 🐛 docs ([5bfb6fa](https://gitee.com/newgateway/vtj/commits/5bfb6fae9d80d601d42e92d0aedcaadfa712e78f))
+
+
+
+
+
+## [0.12.15](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.14...@vtj/docs@0.12.15) (2025-05-07)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.14](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.13...@vtj/docs@0.12.14) (2025-05-07)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.13](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.12...@vtj/docs@0.12.13) (2025-05-06)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.12](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.11...@vtj/docs@0.12.12) (2025-05-06)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.11](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.10...@vtj/docs@0.12.11) (2025-05-05)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
+## [0.12.10](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.9...@vtj/docs@0.12.10) (2025-04-30)
+
+**Note:** Version bump only for package @vtj/docs
+
+
+
+
+
 ## [0.12.9](https://gitee.com/newgateway/vtj/compare/@vtj/docs@0.12.8...@vtj/docs@0.12.9) (2025-04-29)
 
 

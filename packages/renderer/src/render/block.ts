@@ -77,6 +77,9 @@ export function createRenderer(options: CreateRendererOptions) {
       const computed = createComputed(Vue, dsl.value.computed ?? {}, context);
       const methods = createMethods(dsl.value.methods ?? {}, context);
       const injects = createInject(Vue, dsl.value.inject, context);
+      for (const [key, value] of Object.entries(injects || {})) {
+        injects[key] = Vue.inject(key, value);
+      }
       const dataSources = createDataSources(
         dsl.value.dataSources || {},
         context
@@ -100,9 +103,11 @@ export function createRenderer(options: CreateRendererOptions) {
       if (!dsl.value.nodes) return null;
       const nodes: NodeSchema[] = dsl.value.nodes || [];
       if (nodes.length === 1) {
-        return nodeRender(nodes[0], context, Vue, loader);
+        return nodeRender(nodes[0], context, Vue, loader, nodes);
       } else {
-        return nodes.map((child) => nodeRender(child, context, Vue, loader));
+        return nodes.map((child) =>
+          nodeRender(child, context, Vue, loader, nodes)
+        );
       }
     },
     ...createLifeCycles(dsl.value.lifeCycles ?? {}, context)

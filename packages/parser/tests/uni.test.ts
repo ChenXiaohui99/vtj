@@ -2,7 +2,7 @@ import { expect, test } from 'vitest';
 import { parseVue, htmlToNodes } from '../src';
 
 import { uniProject } from './sources/uni';
-import { uni_13 as source } from './sources/uni_13';
+import { uni_24 as source } from './sources/uni_24';
 
 test('test_1', async () => {
   const result = await parseVue({
@@ -14,7 +14,7 @@ test('test_1', async () => {
     console.error('error', errors);
   });
 
-  // console.log(JSON.stringify(result, null, 2));
+  console.log(JSON.stringify(result, null, 2));
 
   expect(true).toBeTruthy();
 });

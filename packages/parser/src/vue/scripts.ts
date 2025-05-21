@@ -23,7 +23,7 @@ import { getJSExpression, getJSFunction, LIFE_CYCLES_LIST } from './utils';
 
 export interface ImportStatement {
   from: string;
-  imports: string[];
+  imports: string[] | string;
 }
 
 export interface ParseScriptsResult {
@@ -130,11 +130,13 @@ export function parseScripts(content: string, project: ProjectSchema) {
   return result;
 }
 
-function parseImports(script: string) {
+function parseImports(_script: string) {
   const importRegex = /import\s+{(.+?)}\s+from\s+['"](.+?)['"]/g;
+  const importDefaultRegex = /import\s+(.+?)\s+from\s+['"](.+?)['"]/g;
+  const blockRegex = /^{(.+?)}$/;
   const imports: ImportStatement[] = [];
   let match;
-
+  const script = _script.replace(/\n/g, ' ');
   while ((match = importRegex.exec(script)) !== null) {
     const from =
       match[2] === '@element-plus/icons-vue' ? '@vtj/icons' : match[2];
@@ -142,6 +144,17 @@ function parseImports(script: string) {
       from,
       imports: match[1].split(',').map((s) => s.trim())
     });
+  }
+
+  while ((match = importDefaultRegex.exec(script)) !== null) {
+    const defaults = match[1];
+    const from = match[2];
+    if (defaults && !blockRegex.test(defaults)) {
+      imports.push({
+        from,
+        imports: defaults
+      });
+    }
   }
 
   return imports;
@@ -180,7 +193,7 @@ function getState(block: BlockStatement) {
 function getFunction(item: ObjectMethod) {
   const { key, async, params, body } = item;
   const paramsStr = params
-    .map((n: any) => {
+    ?.map((n: any) => {
       if (n.type === 'ObjectPattern') {
         const pattern = n.properties
           .map((n: any) => n.key?.name || n.name)
@@ -192,7 +205,16 @@ function getFunction(item: ObjectMethod) {
     .join(', ');
   if (key.type === 'Identifier') {
     const name = key.name;
-    const code = generateCode(body);
+    let code = '{}';
+    if (body) {
+      code = generateCode(body) || '{}';
+    }
+    const value = (item as any).value;
+    if (value && value.type === 'CallExpression') {
+      let valueContent = generateCode(value) || '';
+      valueContent = valueContent.replace('function () {', '() => {');
+      code = `{ return (${valueContent})}`;
+    }
     const asyncContent = async ? 'async ' : '';
     const content = `${asyncContent}(${paramsStr}) => ${code}`;
     const watcher = name.startsWith('watcher_');

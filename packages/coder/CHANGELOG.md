@@ -3,6 +3,135 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.24](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.23...@vtj/coder@0.12.24) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.23](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.22...@vtj/coder@0.12.23) (2025-05-21)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.22](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.21...@vtj/coder@0.12.22) (2025-05-20)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.21](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.20...@vtj/coder@0.12.21) (2025-05-16)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.20](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.19...@vtj/coder@0.12.20) (2025-05-15)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.19](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.18...@vtj/coder@0.12.19) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.18](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.17...@vtj/coder@0.12.18) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.17](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.16...@vtj/coder@0.12.17) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.16](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.15...@vtj/coder@0.12.16) (2025-05-12)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.15](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.14...@vtj/coder@0.12.15) (2025-05-07)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.14](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.13...@vtj/coder@0.12.14) (2025-05-07)
+
+
+### Bug Fixes
+
+* 🐛 icons import miss ([b3469b0](https://gitee.com/newgateway/vtj/commits/b3469b089c84d5bcbd6b6d90dccf85f2db147d23))
+
+
+
+
+
+## [0.12.13](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.12...@vtj/coder@0.12.13) (2025-05-06)
+
+
+### Bug Fixes
+
+* 🐛 icons import miss ([a610c53](https://gitee.com/newgateway/vtj/commits/a610c53c5944dc3dd1b3ef556001e4c70a36f5a3))
+
+
+
+
+
+## [0.12.12](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.11...@vtj/coder@0.12.12) (2025-05-06)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.11](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.10...@vtj/coder@0.12.11) (2025-05-05)
+
+
+### Features
+
+* ✨ 支持v-else-if 和 v-else 代码分支 ([6965137](https://gitee.com/newgateway/vtj/commits/69651374b83bffd4bb65f4e8d7de82eb4dc87e7d))
+
+
+
+
+
+## [0.12.10](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.9...@vtj/coder@0.12.10) (2025-04-30)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
 ## [0.12.9](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.8...@vtj/coder@0.12.9) (2025-04-29)
 
 **Note:** Version bump only for package @vtj/coder

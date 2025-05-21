@@ -11,14 +11,18 @@
     Extension,
     createAdapter,
     createServiceRequest,
-    setupPageSetting
+    setupPageSetting,
+    loadEnhance,
+    type VTJConfig,
+    type EnhanceConfig
   } from '../../src';
   import { IconsPlugin } from '@vtj/icons';
   import { useTitle } from '@vueuse/core';
   import { notify, loading, alert } from '../utils';
 
   const service = new LocalService(createServiceRequest(notify));
-  const config = await service.getExtension().catch(() => null);
+  const config: VTJConfig =
+    (await service.getExtension().catch(() => null)) || {};
   const adapter = createAdapter({
     loading,
     notify,
@@ -28,6 +32,7 @@
   });
   const options = config ? await new Extension(config).load() : {};
   const { __BASE_PATH__ = '/' } = config || {};
+
   const { provider, onReady } = createProvider({
     mode: ContextMode.Runtime,
     service,
@@ -46,13 +51,18 @@
   const instance = getCurrentInstance();
 
   onReady(async () => {
+    const enhance = await loadEnhance(config.enhance as EnhanceConfig);
     const app = instance?.appContext.app;
     if (app) {
       if (options.install) {
         options.install(app);
       }
+      if (enhance) {
+        app.use(enhance, provider);
+      }
       app.use(IconsPlugin);
       app.use(provider);
+
       renderer.value = await provider.getRenderComponent(
         route.params.id.toString(),
         (file: any) => {

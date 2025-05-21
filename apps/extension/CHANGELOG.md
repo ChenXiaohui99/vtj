@@ -3,6 +3,126 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.24](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.23...vtj-extension@0.12.24) (2025-05-21)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.23](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.22...vtj-extension@0.12.23) (2025-05-21)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.22](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.21...vtj-extension@0.12.22) (2025-05-20)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.21](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.20...vtj-extension@0.12.21) (2025-05-16)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.20](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.19...vtj-extension@0.12.20) (2025-05-15)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.19](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.18...vtj-extension@0.12.19) (2025-05-12)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.18](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.17...vtj-extension@0.12.18) (2025-05-12)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.17](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.16...vtj-extension@0.12.17) (2025-05-12)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.16](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.15...vtj-extension@0.12.16) (2025-05-12)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.15](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.14...vtj-extension@0.12.15) (2025-05-07)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.14](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.13...vtj-extension@0.12.14) (2025-05-07)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.13](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.12...vtj-extension@0.12.13) (2025-05-06)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.12](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.11...vtj-extension@0.12.12) (2025-05-06)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.11](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.10...vtj-extension@0.12.11) (2025-05-05)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
+## [0.12.10](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.9...vtj-extension@0.12.10) (2025-04-30)
+
+**Note:** Version bump only for package vtj-extension
+
+
+
+
+
 ## [0.12.9](https://gitee.com/newgateway/vtj/compare/vtj-extension@0.12.8...vtj-extension@0.12.9) (2025-04-29)
 
 **Note:** Version bump only for package vtj-extension
