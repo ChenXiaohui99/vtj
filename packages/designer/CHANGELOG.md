@@ -3,6 +3,37 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.27](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.26...@vtj/designer@0.12.27) (2025-05-23)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
+## [0.12.26](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.25...@vtj/designer@0.12.26) (2025-05-23)
+
+
+### Bug Fixes
+
+* 🐛 ai dsl error ([5b1ae66](https://gitee.com/newgateway/vtj/commits/5b1ae66f0ba5215bf677e0a3cc4fdeac3101c6a3))
+
+
+
+
+
+## [0.12.25](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.24...@vtj/designer@0.12.25) (2025-05-22)
+
+
+### Bug Fixes
+
+* 🐛 模版面板滚动条样式 ([18adea0](https://gitee.com/newgateway/vtj/commits/18adea0392011e470bd5fd67cc781330df57c0d3))
+* 🐛 模版面板折叠失效 ([bc40c6a](https://gitee.com/newgateway/vtj/commits/bc40c6a2e165a328571656d898ea3d52c5999cc8))
+
+
+
+
+
 ## [0.12.24](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.23...@vtj/designer@0.12.24) (2025-05-21)
 
 **Note:** Version bump only for package @vtj/designer

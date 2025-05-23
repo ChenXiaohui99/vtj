@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.27](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.26...@vtj/parser@0.12.27) (2025-05-23)
+
+
+### Bug Fixes
+
+* 🐛 parser支持解析scss ([328b430](https://gitee.com/newgateway/vtj/commits/328b43008280ceb4ca4bfc5d5857bd804ac61278))
+
+
+
+
+
+## [0.12.26](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.25...@vtj/parser@0.12.26) (2025-05-23)
+
+
+### Bug Fixes
+
+* 🐛 ai dsl error ([5b1ae66](https://gitee.com/newgateway/vtj/commits/5b1ae66f0ba5215bf677e0a3cc4fdeac3101c6a3))
+
+
+
+
+
+## [0.12.25](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.24...@vtj/parser@0.12.25) (2025-05-22)
+
+
+### Bug Fixes
+
+* 🐛 提示词优化 ([eb6c0cb](https://gitee.com/newgateway/vtj/commits/eb6c0cbbe792dec515ee0e309b6dfc48795e4764))
+
+
+
+
+
 ## [0.12.24](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.23...@vtj/parser@0.12.24) (2025-05-21)
 
 
