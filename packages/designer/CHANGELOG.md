@@ -3,6 +3,161 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.40](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.39...@vtj/designer@0.12.40) (2025-06-12)
+
+
+### Bug Fixes
+
+* 🐛 根据条件自动判断开启数据配置项 ([f7f1f1f](https://gitee.com/newgateway/vtj/commits/f7f1f1f5fddabe3f014de10de6d3843676fab232))
+* 🐛 可拖拽不在组件列表的不同html元素 ([cb3c2c7](https://gitee.com/newgateway/vtj/commits/cb3c2c77e16b4e94e96a87b8653ed21dd2860040))
+* 🐛 ai对话错误时取消请求 ([15d3193](https://gitee.com/newgateway/vtj/commits/15d319366144d094d35eb027ed399ea651763af9))
+* 🐛 inject增加默认值null ([2e0e638](https://gitee.com/newgateway/vtj/commits/2e0e638f049203f8ed389aae46c8248a774f2907))
+
+
+### Features
+
+* ✨ 页面引入的区块支持快捷方式打开 ([4cc9288](https://gitee.com/newgateway/vtj/commits/4cc92889245c2e32993cf00d6ceb8c26dec6c7e7))
+* ✨ report collect project uid ([8fa2a88](https://gitee.com/newgateway/vtj/commits/8fa2a884d883883cc9d6fd9bbbfd3579882d58a2))
+
+
+
+
+
+## [0.12.39](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.38...@vtj/designer@0.12.39) (2025-06-11)
+
+
+### Bug Fixes
+
+* 🐛 更改区块同步更新页面引用区块 ([962f971](https://gitee.com/newgateway/vtj/commits/962f9714c953dba15367717a2857b5dcbdba89c5))
+
+
+
+
+
+## [0.12.38](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.37...@vtj/designer@0.12.38) (2025-06-11)
+
+
+### Bug Fixes
+
+* 🐛 区块首次拖进页面无法再拖拽放置问题 ([65df49a](https://gitee.com/newgateway/vtj/commits/65df49a277267913f4dd8e291bf14b9e095b9eaa))
+
+
+
+
+
+## [0.12.37](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.36...@vtj/designer@0.12.37) (2025-06-09)
+
+
+### Bug Fixes
+
+* 🐛 新增页面表单样式 ([17b6135](https://gitee.com/newgateway/vtj/commits/17b6135bc01076e21433c6fdf3b3762934a829af))
+
+
+
+
+
+## [0.12.36](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.35...@vtj/designer@0.12.36) (2025-06-09)
+
+
+### Bug Fixes
+
+* 🐛 normalizedStyle ([1efe6ad](https://gitee.com/newgateway/vtj/commits/1efe6adcef2859acfb7733659cc8329587505342))
+
+
+### Features
+
+* ✨ RouterView ([112b021](https://gitee.com/newgateway/vtj/commits/112b0217ea408074cd6eeda0ae1e8e1f8206498e))
+
+
+
+
+
+## [0.12.35](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.34...@vtj/designer@0.12.35) (2025-06-06)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
+## [0.12.34](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.33...@vtj/designer@0.12.34) (2025-06-06)
+
+
+### Features
+
+* ✨ 支持设置物料是否显示到组件库面板, utils 和 icons 依赖改为可选 ([747fda3](https://gitee.com/newgateway/vtj/commits/747fda31e72b211d9dff63953f4c095ea41d7368))
+
+
+
+
+
+## [0.12.33](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.32...@vtj/designer@0.12.33) (2025-06-04)
+
+
+### Bug Fixes
+
+* 🐛 图片/json识别加入到token统计 ([96063c8](https://gitee.com/newgateway/vtj/commits/96063c847a20a1cd6af3f0047388740076b91ee3))
+
+
+
+
+
+## [0.12.32](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.31...@vtj/designer@0.12.32) (2025-06-03)
+
+
+### Features
+
+* ✨ AI支持sketch figma 元数据文件识别 ([77adea0](https://gitee.com/newgateway/vtj/commits/77adea04e80aa0d4b100eececb311a9dffaae222))
+
+
+
+
+
+## [0.12.31](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.30...@vtj/designer@0.12.31) (2025-05-29)
+
+
+### Bug Fixes
+
+* 🐛 remote配置错误 ([3d36b53](https://gitee.com/newgateway/vtj/commits/3d36b53b5602dc881409dd257fbd94925ed17016))
+* 🐛 uniapp 平台没有区分页面和区块的生命周期下拉选项 ([2080000](https://gitee.com/newgateway/vtj/commits/20800007f3f315e33a0dd6ec0e78aeb38fc0f252))
+
+
+### Features
+
+* ✨ engine state ([b238b25](https://gitee.com/newgateway/vtj/commits/b238b25fb811db6c9d00ea3c6b5073fa88a139d7))
+
+
+
+
+
+## [0.12.30](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.29...@vtj/designer@0.12.30) (2025-05-27)
+
+
+### Bug Fixes
+
+* 🐛 更换登录地址 ([ccac53e](https://gitee.com/newgateway/vtj/commits/ccac53ed6367543992322afcd90c90130695949d))
+* 🐛 支付提示 ([15dfff3](https://gitee.com/newgateway/vtj/commits/15dfff35e55a4c50774ec93d403557a432179386))
+
+
+
+
+
+## [0.12.29](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.28...@vtj/designer@0.12.29) (2025-05-23)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
+## [0.12.28](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.27...@vtj/designer@0.12.28) (2025-05-23)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
 ## [0.12.27](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.26...@vtj/designer@0.12.27) (2025-05-23)
 
 **Note:** Version bump only for package @vtj/designer

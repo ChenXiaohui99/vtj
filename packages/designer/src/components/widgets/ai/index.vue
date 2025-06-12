@@ -70,7 +70,8 @@
         :disabled="inputDisabled"
         :fillPromptInput="fillPromptInput"
         @send="onPostTopic"
-        @image-send="onPostImageTopic"></NewTopic>
+        @image-send="onPostImageTopic"
+        @json-send="onPostJsonTopic"></NewTopic>
 
       <div v-if="!isNewChat" ref="listRef" class="v-ai-widget__bubble-list">
         <template v-for="chat of chats" :key="chat.id">
@@ -155,6 +156,7 @@
       :get-image="getImage"></InviteTip>
     <PayTip
       v-if="settings"
+      :remote="engine.remote"
       :settings="settings"
       :get-image="getImage"
       :create-order="createOrder"
@@ -228,6 +230,7 @@
     updateChatDsl,
     getImage,
     onPostImageTopic,
+    onPostJsonTopic,
     onCancelChat
   } = useAI();
 

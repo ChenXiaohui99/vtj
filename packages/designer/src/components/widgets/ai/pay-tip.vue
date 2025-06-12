@@ -7,7 +7,10 @@
     </ElAlert>
     <div class="limit-tip__content">
       <ElButton :icon="ShoppingCart" type="primary" round @click="onOrder">
-        立即开通 <span class="price">99元/月</span>
+        立即开通
+        <span class="price">
+          {{ Number.parseInt(props.settings?.price as any) }}元/月
+        </span>
       </ElButton>
       <ElButton
         class="limit-tip__close"
@@ -73,7 +76,9 @@
     </ElSteps>
     <div class="pay-tip">
       <strong>提示：</strong>
-      订阅成功后您将拥有VTJ.PRO全功能权限，并赠送DeepSeek官方5百万tokens使用量。
+      订阅成功后您将拥有VTJ.PRO全功能权限，并赠送DeepSeek官方{{
+        parseInt(String(props.settings?.max || 0), 10)
+      }}百万tokens使用量。
     </div>
     <template #footer>
       <ElButton
@@ -101,10 +106,11 @@
   import { useClipboard } from '@vueuse/core';
   import { type Settings } from '../../hooks';
   import { alert, confirm } from '../../../utils';
+  import { REMOTE } from '../../../constants';
 
   export interface Props {
     settings?: Settings;
-    remote?: string;
+    remote?: string | null;
     createOrder: any;
     cancelOrder: any;
     getOrder: any;
@@ -118,7 +124,7 @@
   const orderData = ref<any>(null);
 
   const orderLink = computed(() => {
-    return `${props.remote}/page/a3wwnb20?id=${orderData.value?.id}`;
+    return `${props.remote || REMOTE}/page/a3wwnb20?id=${orderData.value?.id}`;
   });
 
   watch(

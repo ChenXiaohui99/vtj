@@ -3,6 +3,136 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.40](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.39...@vtj/renderer@0.12.40) (2025-06-12)
+
+
+### Bug Fixes
+
+* 🐛 可拖拽不在组件列表的不同html元素 ([cb3c2c7](https://gitee.com/newgateway/vtj/commits/cb3c2c77e16b4e94e96a87b8653ed21dd2860040))
+
+
+
+
+
+## [0.12.39](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.38...@vtj/renderer@0.12.39) (2025-06-11)
+
+
+### Bug Fixes
+
+* 🐛 更改区块同步更新页面引用区块 ([962f971](https://gitee.com/newgateway/vtj/commits/962f9714c953dba15367717a2857b5dcbdba89c5))
+
+
+
+
+
+## [0.12.38](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.37...@vtj/renderer@0.12.38) (2025-06-11)
+
+
+### Features
+
+* ✨ 加载区块组件增加队列缓存 ([d681d57](https://gitee.com/newgateway/vtj/commits/d681d575706d4f3f819323d5490339776a1032d0))
+
+
+
+
+
+## [0.12.37](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.36...@vtj/renderer@0.12.37) (2025-06-09)
+
+
+### Bug Fixes
+
+* 🐛 页面mounted拿不到$refs ([01da7c8](https://gitee.com/newgateway/vtj/commits/01da7c8d2b8ff16f138f2ed96e4f03aa0938d8bb))
+* 🐛 slots style scoped ([2ddf696](https://gitee.com/newgateway/vtj/commits/2ddf69670b5e818c6e14bc9ac52bd396f9d26a70))
+
+
+
+
+
+## [0.12.36](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.35...@vtj/renderer@0.12.36) (2025-06-09)
+
+
+### Bug Fixes
+
+* 🐛 修复多个区块排序错乱问题 ([bf21513](https://gitee.com/newgateway/vtj/commits/bf21513140f2bfd830c7295425cc153b399a0abf))
+* 🐛 compileScopedCSS ([84689ea](https://gitee.com/newgateway/vtj/commits/84689eae582dd0a97fc17dff1516bbc01e94bae1))
+
+
+
+
+
+## [0.12.35](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.34...@vtj/renderer@0.12.35) (2025-06-06)
+
+
+### Bug Fixes
+
+* 🐛 renderer default slots bug ([6b14e59](https://gitee.com/newgateway/vtj/commits/6b14e59ca133d034553493857b82f5ab269f29a2))
+
+
+
+
+
+## [0.12.34](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.33...@vtj/renderer@0.12.34) (2025-06-06)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.33](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.32...@vtj/renderer@0.12.33) (2025-06-04)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.32](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.31...@vtj/renderer@0.12.32) (2025-06-03)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.31](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.30...@vtj/renderer@0.12.31) (2025-05-29)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.30](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.29...@vtj/renderer@0.12.30) (2025-05-27)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.12.29](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.28...@vtj/renderer@0.12.29) (2025-05-23)
+
+
+### Bug Fixes
+
+* 🐛 renderer css scoped ([1d2b741](https://gitee.com/newgateway/vtj/commits/1d2b741b735616197e776ceb7cc845779a161164))
+
+
+
+
+
+## [0.12.28](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.27...@vtj/renderer@0.12.28) (2025-05-23)
+
+
+### Bug Fixes
+
+* 🐛 render scoped css ([69d0c34](https://gitee.com/newgateway/vtj/commits/69d0c34b1b0836818bc6c6899981dd1092e28b29))
+
+
+
+
+
 ## [0.12.27](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.26...@vtj/renderer@0.12.27) (2025-05-23)
 
 **Note:** Version bump only for package @vtj/renderer

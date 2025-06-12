@@ -15,9 +15,9 @@ export interface ExpressionOptions {
 export function replacer(content: string, key: string, to: string) {
   const r1 = new RegExp(`${key}`, 'g');
   // 关键字前的字符
-  const r2 = /(\@\_|\$|\.|\,|\w|\{\s)$/;
+  const r2 = /(\@|\_|\-|\$|\.|\,|\w|\{\s)$/;
   // 关键字后的字符
-  const r3 = /^\w/;
+  const r3 = /^[\w\_\-\@\$]/;
   const r4 = new RegExp(`^this\.${key}$`, 'g');
   const result = content.replace(r1, (str, index, source) => {
     const start = source.substring(0, index);
@@ -110,7 +110,7 @@ export const LIFE_CYCLES_LIST = [
 ];
 
 export const HTML_TAGS =
-  'html,body,base,head,link,meta,style,title,address,article,aside,footer,header,hgroup,h1,h2,h3,h4,h5,h6,nav,section,div,dd,dl,dt,figcaption,figure,picture,hr,img,li,main,ol,p,pre,ul,a,b,abbr,bdi,bdo,br,cite,code,data,dfn,em,i,kbd,mark,q,rp,rt,ruby,s,samp,small,span,strong,sub,sup,time,u,var,wbr,area,audio,map,track,video,embed,object,param,source,canvas,script,noscript,del,ins,caption,col,colgroup,table,thead,tbody,td,th,tr,button,datalist,fieldset,form,input,label,legend,meter,optgroup,option,output,progress,select,textarea,details,dialog,menu,summary,template,blockquote,iframe,tfoot'.split(
+  'html,body,base,head,link,meta,style,title,address,article,aside,footer,header,hgroup,h1,h2,h3,h4,h5,h6,nav,section,div,dd,dl,dt,figcaption,figure,picture,hr,img,li,main,ol,p,pre,ul,a,b,abbr,bdi,bdo,br,cite,code,data,dfn,em,i,kbd,mark,q,rp,rt,ruby,s,samp,small,span,strong,sub,sup,time,u,var,wbr,area,audio,map,track,video,embed,object,param,source,canvas,script,noscript,del,ins,caption,col,colgroup,table,thead,tbody,td,th,tr,button,datalist,fieldset,form,input,label,legend,meter,optgroup,option,output,progress,select,textarea,details,dialog,menu,summary,template,blockquote,iframe,tfoot,svg,path,circle,rect,polygon'.split(
     ','
   );
 

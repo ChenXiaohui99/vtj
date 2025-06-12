@@ -3,6 +3,116 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.40](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.39...@vtj/core@0.12.40) (2025-06-12)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.39](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.38...@vtj/core@0.12.39) (2025-06-11)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.38](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.37...@vtj/core@0.12.38) (2025-06-11)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.37](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.36...@vtj/core@0.12.37) (2025-06-09)
+
+
+### Bug Fixes
+
+* 🐛 页面另存为区块时，css样式没有带过去 ([144cddc](https://gitee.com/newgateway/vtj/commits/144cddc030cdfd7023e39a77de453d471ff47eea))
+
+
+
+
+
+## [0.12.36](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.35...@vtj/core@0.12.36) (2025-06-09)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.35](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.34...@vtj/core@0.12.35) (2025-06-06)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.34](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.33...@vtj/core@0.12.34) (2025-06-06)
+
+
+### Features
+
+* ✨ 支持设置物料是否显示到组件库面板, utils 和 icons 依赖改为可选 ([747fda3](https://gitee.com/newgateway/vtj/commits/747fda31e72b211d9dff63953f4c095ea41d7368))
+
+
+
+
+
+## [0.12.33](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.32...@vtj/core@0.12.33) (2025-06-04)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.32](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.31...@vtj/core@0.12.32) (2025-06-03)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.31](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.30...@vtj/core@0.12.31) (2025-05-29)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.30](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.29...@vtj/core@0.12.30) (2025-05-27)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.29](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.28...@vtj/core@0.12.29) (2025-05-23)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.12.28](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.27...@vtj/core@0.12.28) (2025-05-23)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
 ## [0.12.27](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.12.26...@vtj/core@0.12.27) (2025-05-23)
 
 **Note:** Version bump only for package @vtj/core

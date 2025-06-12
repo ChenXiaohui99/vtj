@@ -3,6 +3,110 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.40](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.39...vtj-material@0.12.40) (2025-06-12)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.39](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.38...vtj-material@0.12.39) (2025-06-11)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.38](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.37...vtj-material@0.12.38) (2025-06-11)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.37](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.36...vtj-material@0.12.37) (2025-06-09)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.36](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.35...vtj-material@0.12.36) (2025-06-09)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.35](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.34...vtj-material@0.12.35) (2025-06-06)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.34](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.33...vtj-material@0.12.34) (2025-06-06)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.33](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.32...vtj-material@0.12.33) (2025-06-04)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.32](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.31...vtj-material@0.12.32) (2025-06-03)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.31](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.30...vtj-material@0.12.31) (2025-05-29)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.30](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.29...vtj-material@0.12.30) (2025-05-27)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.29](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.28...vtj-material@0.12.29) (2025-05-23)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.28](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.27...vtj-material@0.12.28) (2025-05-23)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
 ## [0.12.27](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.26...vtj-material@0.12.27) (2025-05-23)
 
 **Note:** Version bump only for package vtj-material

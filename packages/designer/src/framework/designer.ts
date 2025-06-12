@@ -8,7 +8,7 @@ import {
   createApp,
   watch
 } from 'vue';
-import { type Context } from '@vtj/renderer';
+import { type Context, HTML_TAGS } from '@vtj/renderer';
 import {
   type Dependencie,
   type DropPosition,
@@ -67,8 +67,6 @@ export class Designer {
   public dragging: MaterialDescription | null = null;
   public draggingNode: NodeModel | null = null;
   public lines: ShallowRef<DOMRect[]> = shallowRef([]);
-  public outlineEnabled: Ref<boolean> = ref(true);
-  public activeEvent: Ref<boolean> = ref(true);
   constructor(
     public engine: Engine,
     public contentWindow: Window,
@@ -127,9 +125,12 @@ export class Designer {
       },
       { immediate: true }
     );
-    watch(this.outlineEnabled, () => {
-      this.updateLines();
-    });
+    watch(
+      () => this.engine.state.outlineEnabled,
+      () => {
+        this.updateLines();
+      }
+    );
   }
 
   private unbindEvents(cw: Window, doc: Document) {
@@ -301,7 +302,7 @@ export class Designer {
   private onSelected(e: MouseEvent) {
     if (this.devtools.isOpen.value) return;
     // 与 vue-devtools 冲突，不能阻止冒泡
-    if (!this.activeEvent.value) {
+    if (!this.engine.state.activeEvent) {
       e.stopPropagation();
     }
 
@@ -311,6 +312,7 @@ export class Designer {
 
   private async onDragOver(e: DragEvent) {
     const helper = this.getHelper(e);
+
     if (!helper) return;
     const { model, type } = helper;
     if (model && (await this.allowDrop(model, type))) {
@@ -321,11 +323,17 @@ export class Designer {
     }
   }
 
-  private onDragStart(e: DragEvent) {
+  private async onDragStart(e: DragEvent) {
     const helper = this.getHelper(e);
     if (!helper) return;
     const { model } = helper;
-    const desc = this.engine.assets.componentMap.get(model.name);
+    let desc = this.engine.assets.componentMap.get(model.name);
+    const from = (model as NodeModel).from;
+    if (!desc && from) {
+      desc = (await this.engine.assets.getBlockMaterial(
+        from
+      )) as MaterialDescription;
+    }
     if (desc) {
       this.setDragging(desc);
     }
@@ -474,12 +482,12 @@ export class Designer {
   }
 
   async updateLines() {
-    if (!this.outlineEnabled.value) {
+    if (!this.engine.state.outlineEnabled) {
       this.lines.value = [];
       return;
     }
     // 需要等待下一帧才能获取到HTML元素
-    await delay(50);
+    await delay(100);
     const refs = this.engine.simulator.renderer?.context?.__refs || {};
     const lines: DOMRect[] = [];
     const ids = Object.keys(NodeModel.nodes);
@@ -584,6 +592,10 @@ export class Designer {
     if (draggingNode && draggingNode.isChild(target)) {
       return false;
     }
+    if (type === 'inner' && HTML_TAGS.includes(target.name)) {
+      return true;
+    }
+
     const componentMap = engine.assets.componentMap;
     const node = type !== 'inner' ? target.parent || target : target;
     const targetDesc =

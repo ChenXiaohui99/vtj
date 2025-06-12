@@ -3,6 +3,123 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.40](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.39...@vtj/parser@0.12.40) (2025-06-12)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.39](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.38...@vtj/parser@0.12.39) (2025-06-11)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.38](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.37...@vtj/parser@0.12.38) (2025-06-11)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.37](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.36...@vtj/parser@0.12.37) (2025-06-09)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.36](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.35...@vtj/parser@0.12.36) (2025-06-09)
+
+
+### Bug Fixes
+
+* 🐛 compileScopedCSS ([84689ea](https://gitee.com/newgateway/vtj/commits/84689eae582dd0a97fc17dff1516bbc01e94bae1))
+* 🐛 parser css 丢失媒体查询 ([378acab](https://gitee.com/newgateway/vtj/commits/378acab6283390bdb826beda3471c819ca7b900d))
+
+
+
+
+
+## [0.12.35](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.34...@vtj/parser@0.12.35) (2025-06-06)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.34](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.33...@vtj/parser@0.12.34) (2025-06-06)
+
+
+### Bug Fixes
+
+* 🐛 parser ([f7ce7ea](https://gitee.com/newgateway/vtj/commits/f7ce7eaabe571c25b7af232061e0c1fd81346c54))
+
+
+
+
+
+## [0.12.33](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.32...@vtj/parser@0.12.33) (2025-06-04)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.32](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.31...@vtj/parser@0.12.32) (2025-06-03)
+
+
+### Bug Fixes
+
+* 🐛 parser svg tag ([7abc984](https://gitee.com/newgateway/vtj/commits/7abc98461abbe2bc39e4d5d84068444ec86f6a6e))
+
+
+
+
+
+## [0.12.31](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.30...@vtj/parser@0.12.31) (2025-05-29)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.30](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.29...@vtj/parser@0.12.30) (2025-05-27)
+
+
+### Bug Fixes
+
+* 🐛 更换登录地址 ([ccac53e](https://gitee.com/newgateway/vtj/commits/ccac53ed6367543992322afcd90c90130695949d))
+
+
+
+
+
+## [0.12.29](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.28...@vtj/parser@0.12.29) (2025-05-23)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
+## [0.12.28](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.27...@vtj/parser@0.12.28) (2025-05-23)
+
+**Note:** Version bump only for package @vtj/parser
+
+
+
+
+
 ## [0.12.27](https://gitee.com/newgateway/vtj/compare/@vtj/parser@0.12.26...@vtj/parser@0.12.27) (2025-05-23)
 
 

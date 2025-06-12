@@ -48,7 +48,7 @@ export function nodeRender(
     return branchRender(dsl, context, Vue, loader, brothers);
   }
 
-  const render = (context: Context) => {
+  const render = (context: Context, seq: number = 0) => {
     const $components = context.$components;
 
     const component = (() => {
@@ -111,7 +111,13 @@ export function nodeRender(
       dsl
     );
 
-    let vnode = Vue.createVNode(component, { ...props, ...events }, slots);
+    const __scopeId = context?.__id ? `data-v-${context.__id}` : undefined;
+    const styleScope = __scopeId ? { [__scopeId]: '' } : {};
+    let vnode = Vue.createVNode(
+      component,
+      { key: `${id}_${seq}`, ...styleScope, ...props, ...events },
+      slots
+    );
 
     // v-others 绑定其他指令
     const withDirectives = appContext
@@ -394,6 +400,7 @@ function childrenToSlots(
   }
   if (Array.isArray(children) && children.length > 0) {
     const slots = createSlotsConfig(children);
+
     const getScope = (scope: any) => {
       if (!scope || !parent) return {};
       if (parent?.id && Object.keys(scope).length) {
@@ -421,12 +428,7 @@ function childrenToSlots(
 }
 
 function createSlotsConfig(nodes: NodeSchema[]) {
-  const config: Record<string, { params: string[]; nodes: NodeSchema[] }> = {
-    default: {
-      params: [],
-      nodes: []
-    }
-  };
+  const config: Record<string, { params: string[]; nodes: NodeSchema[] }> = {};
   for (const node of nodes) {
     const slot = parseSlot(node.slot);
     const slotName = slot.name;
@@ -449,7 +451,10 @@ function parseSlot(slot: string | NodeSlot = 'default') {
 
 function vForRender(
   directive: NodeDirective,
-  render: (context: Context) => VNode | Array<VNode | null> | null,
+  render: (
+    context: Context,
+    seq?: number
+  ) => VNode | Array<VNode | null> | null,
   context: Context
 ) {
   const { value, iterator } = directive;
@@ -464,6 +469,6 @@ function vForRender(
     return [] as any;
   }
   return items.map((_item: any, _index: number) => {
-    return render(context.__clone({ [item]: _item, [index]: _index }));
+    return render(context.__clone({ [item]: _item, [index]: _index }), _index);
   });
 }
