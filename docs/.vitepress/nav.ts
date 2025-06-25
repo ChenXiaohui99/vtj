@@ -1,9 +1,11 @@
 export default [
   { text: '文档', link: '/guide/' },
+  { text: '维基', link: '/wiki/' },
   { text: '工具库', link: '/utils/' },
   { text: 'UI库', link: '/ui/' },
   // { text: '图表库', link: '/icons/' },
   { text: 'API', link: '/typedoc/modules.html' },
+  { text: '🔥 高级服务', link: '/service/' },
   {
     text: '相关链接',
     items: [
