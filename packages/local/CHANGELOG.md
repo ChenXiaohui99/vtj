@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.55](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.54...@vtj/local@0.12.55) (2025-07-09)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
+## [0.12.54](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.53...@vtj/local@0.12.54) (2025-07-08)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
+## [0.12.53](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.52...@vtj/local@0.12.53) (2025-07-07)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
+## [0.12.52](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.51...@vtj/local@0.12.52) (2025-07-07)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
+## [0.12.51](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.50...@vtj/local@0.12.51) (2025-07-07)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
+## [0.12.50](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.49...@vtj/local@0.12.50) (2025-07-04)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
+## [0.12.49](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.48...@vtj/local@0.12.49) (2025-07-02)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
+## [0.12.48](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.47...@vtj/local@0.12.48) (2025-06-30)
+
+**Note:** Version bump only for package @vtj/local
+
+
+
+
+
 ## [0.12.47](https://gitee.com/newgateway/vtj/compare/@vtj/local@0.12.46...@vtj/local@0.12.47) (2025-06-24)
 
 **Note:** Version bump only for package @vtj/local

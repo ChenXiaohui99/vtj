@@ -3,6 +3,70 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.55](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.54...vtj-project-uniapp@0.12.55) (2025-07-09)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
+## [0.12.54](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.53...vtj-project-uniapp@0.12.54) (2025-07-08)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
+## [0.12.53](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.52...vtj-project-uniapp@0.12.53) (2025-07-07)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
+## [0.12.52](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.51...vtj-project-uniapp@0.12.52) (2025-07-07)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
+## [0.12.51](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.50...vtj-project-uniapp@0.12.51) (2025-07-07)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
+## [0.12.50](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.49...vtj-project-uniapp@0.12.50) (2025-07-04)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
+## [0.12.49](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.48...vtj-project-uniapp@0.12.49) (2025-07-02)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
+## [0.12.48](https://github.com/samchen08/vtj.pro/compare/vtj-project-uniapp@0.12.47...vtj-project-uniapp@0.12.48) (2025-06-30)
+
+**Note:** Version bump only for package vtj-project-uniapp
+
+
+
+
+
 ## [0.12.47](https://gitee.com/newgateway/vtj/compare/vtj-project-uniapp@0.12.46...vtj-project-uniapp@0.12.47) (2025-06-24)
 
 **Note:** Version bump only for package vtj-project-uniapp

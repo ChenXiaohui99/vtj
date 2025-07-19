@@ -3,6 +3,92 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.55](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.54...@vtj/designer@0.12.55) (2025-07-09)
+
+
+### Features
+
+* ✨ AI免费额度 ([4260ac9](https://gitee.com/newgateway/vtj/commits/4260ac9a319cc0da727bd36a5e8514d629e9b442))
+
+
+
+
+
+## [0.12.54](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.53...@vtj/designer@0.12.54) (2025-07-08)
+
+
+### Bug Fixes
+
+* 🐛 适配element-plus 2.10.3 类型 ([f55a477](https://gitee.com/newgateway/vtj/commits/f55a47700f116a67c887e9b5d93b6df92866004a))
+
+
+
+
+
+## [0.12.53](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.52...@vtj/designer@0.12.53) (2025-07-07)
+
+
+### Bug Fixes
+
+* 🐛 优化错误提示 ([0b0ec99](https://gitee.com/newgateway/vtj/commits/0b0ec99aee9d5220358536352b7533b5b39dce1d))
+
+
+
+
+
+## [0.12.52](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.51...@vtj/designer@0.12.52) (2025-07-07)
+
+
+### Bug Fixes
+
+* 🐛 0.12.51 ([e4d8797](https://gitee.com/newgateway/vtj/commits/e4d8797a041f6df63b7f9bba3a984f6992db1064))
+
+
+
+
+
+## [0.12.51](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.50...@vtj/designer@0.12.51) (2025-07-07)
+
+
+### Bug Fixes
+
+* 🐛 增加AI输出超过最大限制提示错误信息 ([ea5ad47](https://gitee.com/newgateway/vtj/commits/ea5ad47efae1115c7c740f1f8c404cb368cbef6c))
+
+
+
+
+
+## [0.12.50](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.49...@vtj/designer@0.12.50) (2025-07-04)
+
+
+### Bug Fixes
+
+* 🐛 AI偶发请求错误, 重新生成时自动应用失效问题 ([baa4b4e](https://gitee.com/newgateway/vtj/commits/baa4b4ea463e6d0b08bf54e8129206797118d91f))
+* 🐛 mastergo icon ([4b31960](https://gitee.com/newgateway/vtj/commits/4b31960aa015f73febc46d0c460198a5a3741fde))
+
+
+
+
+
+## [0.12.49](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.48...@vtj/designer@0.12.49) (2025-07-02)
+
+
+### Features
+
+* ✨ 支持mastergo ([0e1b6f3](https://gitee.com/newgateway/vtj/commits/0e1b6f398c075b0d6efc87cd79a28909e0f4a55b))
+
+
+
+
+
+## [0.12.48](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.47...@vtj/designer@0.12.48) (2025-06-30)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
 ## [0.12.47](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.46...@vtj/designer@0.12.47) (2025-06-24)
 
 **Note:** Version bump only for package @vtj/designer

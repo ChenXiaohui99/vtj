@@ -3,6 +3,73 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.55](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.54...vtj-material@0.12.55) (2025-07-09)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.54](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.53...vtj-material@0.12.54) (2025-07-08)
+
+
+### Bug Fixes
+
+* 🐛 升级依赖 ([dbee35b](https://github.com/samchen08/vtj.pro/commit/dbee35bd867a44f8c71c117fa90d56d108144a6b))
+
+
+
+
+
+## [0.12.53](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.52...vtj-material@0.12.53) (2025-07-07)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.52](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.51...vtj-material@0.12.52) (2025-07-07)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.51](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.50...vtj-material@0.12.51) (2025-07-07)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.50](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.49...vtj-material@0.12.50) (2025-07-04)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.49](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.48...vtj-material@0.12.49) (2025-07-02)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
+## [0.12.48](https://github.com/samchen08/vtj.pro/compare/vtj-material@0.12.47...vtj-material@0.12.48) (2025-06-30)
+
+**Note:** Version bump only for package vtj-material
+
+
+
+
+
 ## [0.12.47](https://gitee.com/newgateway/vtj/compare/vtj-material@0.12.46...vtj-material@0.12.47) (2025-06-24)
 
 **Note:** Version bump only for package vtj-material
