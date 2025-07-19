@@ -3,6 +3,52 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.60](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.59...@vtj/coder@0.12.60) (2025-07-18)
+
+
+### Features
+
+* ✨ XMenu ([c6409fc](https://gitee.com/newgateway/vtj/commits/c6409fce89c4eb8a57494dc27b3ec6af08470f2f))
+
+
+
+
+
+## [0.12.59](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.58...@vtj/coder@0.12.59) (2025-07-18)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.58](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.57...@vtj/coder@0.12.58) (2025-07-16)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.57](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.56...@vtj/coder@0.12.57) (2025-07-16)
+
+**Note:** Version bump only for package @vtj/coder
+
+
+
+
+
+## [0.12.56](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.55...@vtj/coder@0.12.56) (2025-07-16)
+
+
+### Bug Fixes
+
+* 🐛 parser 数据源 ([9befb29](https://gitee.com/newgateway/vtj/commits/9befb2968ecc74f33b01202317e966c8f3bbadcd))
+
+
+
+
+
 ## [0.12.55](https://gitee.com/newgateway/vtj/compare/@vtj/coder@0.12.54...@vtj/coder@0.12.55) (2025-07-09)
 
 **Note:** Version bump only for package @vtj/coder
