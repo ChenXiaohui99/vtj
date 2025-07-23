@@ -8,8 +8,8 @@ on:
 jobs:
   merge-next-to-main:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # 需要写权限执行合并操作
+    # permissions:
+    #   contents: write # 需要写权限执行合并操作
 
     steps:
       - name: 检出代码
