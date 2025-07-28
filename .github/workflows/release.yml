@@ -8,8 +8,8 @@ on:
 jobs:
   create-release:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # 必须授予写入权限
+    # permissions:
+    #   contents: write # 必须授予写入权限
 
     steps:
       - name: Checkout code
