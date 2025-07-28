@@ -3,6 +3,38 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.66](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.65...@vtj/designer@0.12.66) (2025-07-26)
+
+
+### Bug Fixes
+
+* 🐛 禁用发布模版的公开选项 ([7ccb698](https://gitee.com/newgateway/vtj/commits/7ccb6985ffb53e0914da1756e33c752f873fab2d))
+* 🐛 设计器数据源弹窗样式 ([a488f12](https://gitee.com/newgateway/vtj/commits/a488f1232e7581a8828f509ec8455dd1c87762b7))
+* 🐛 simulator body css ([c7bc28b](https://gitee.com/newgateway/vtj/commits/c7bc28b80bc2af5360ed55d062b13f2c25c49f32))
+
+
+
+
+
+## [0.12.65](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.64...@vtj/designer@0.12.65) (2025-07-23)
+
+**Note:** Version bump only for package @vtj/designer
+
+
+
+
+
+## [0.12.64](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.63...@vtj/designer@0.12.64) (2025-07-23)
+
+
+### Features
+
+* ✨ 支持自定义模型 ([37ae362](https://gitee.com/newgateway/vtj/commits/37ae362786659be5bb343290ad0fbd02dbf877f1))
+
+
+
+
+
 ## [0.12.63](https://gitee.com/newgateway/vtj/compare/@vtj/designer@0.12.62...@vtj/designer@0.12.63) (2025-07-19)
 
 
