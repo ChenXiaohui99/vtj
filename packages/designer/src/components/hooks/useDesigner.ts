@@ -4,7 +4,9 @@ import {
   type ApiSchema,
   type MetaSchema,
   type ProjectConfig,
-  type UniConfig
+  type UniConfig,
+  type GlobalConfig,
+  type I18nConfig
 } from '@vtj/core';
 import { useEngine, type DesignHelper } from '../../framework';
 
@@ -14,11 +16,22 @@ export function useDesigner(
   apis: Ref<ApiSchema[]>,
   meta: Ref<MetaSchema[]>,
   config: Ref<ProjectConfig>,
-  uniConfig: Ref<UniConfig>
+  uniConfig: Ref<UniConfig>,
+  globals: Ref<GlobalConfig>,
+  i18n: Ref<I18nConfig>
 ) {
   const engine = useEngine();
 
-  engine.simulator.init(iframe, dependencies, apis, meta, config, uniConfig);
+  engine.simulator.init(
+    iframe,
+    dependencies,
+    apis,
+    meta,
+    config,
+    uniConfig,
+    globals,
+    i18n
+  );
 
   const designer = computed(() => engine.simulator.designer.value);
 

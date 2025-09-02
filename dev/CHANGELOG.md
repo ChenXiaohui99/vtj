@@ -3,6 +3,142 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.16](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.15...dev-web@0.13.16) (2025-09-02)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.15](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.14...dev-web@0.13.15) (2025-09-01)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.14](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.13...dev-web@0.13.14) (2025-08-28)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.13](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.12...dev-web@0.13.13) (2025-08-22)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.12](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.11...dev-web@0.13.12) (2025-08-20)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.11](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.10...dev-web@0.13.11) (2025-08-16)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.10](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.9...dev-web@0.13.10) (2025-08-16)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.9](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.8...dev-web@0.13.9) (2025-08-14)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.8](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.7...dev-web@0.13.8) (2025-08-13)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.7](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.6...dev-web@0.13.7) (2025-08-08)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.6](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.5...dev-web@0.13.6) (2025-08-08)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.5](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.4...dev-web@0.13.5) (2025-08-07)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.4](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.3...dev-web@0.13.4) (2025-08-07)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.3](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.2...dev-web@0.13.3) (2025-08-07)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.2](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.1...dev-web@0.13.2) (2025-08-06)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+## [0.13.1](https://github.com/samchen08/vtj.pro/compare/dev-web@0.13.0...dev-web@0.13.1) (2025-08-06)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
+# [0.13.0](https://github.com/samchen08/vtj.pro/compare/dev-web@0.12.70...dev-web@0.13.0) (2025-08-06)
+
+**Note:** Version bump only for package dev-web
+
+
+
+
+
 ## [0.12.70](https://github.com/samchen08/vtj.pro/compare/dev-web@0.12.69...dev-web@0.12.70) (2025-08-01)
 
 **Note:** Version bump only for package dev-web

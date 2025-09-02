@@ -3,6 +3,179 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.16](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.15...@vtj/ui@0.13.16) (2025-09-02)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.15](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.14...@vtj/ui@0.13.15) (2025-09-01)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.14](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.13...@vtj/ui@0.13.14) (2025-08-28)
+
+
+### Bug Fixes
+
+* 🐛 全局设置box-sizing: border-box ([38efeda](https://gitee.com/newgateway/vtj/commits/38efeda500a894141e2ddb35025757d32a88fdf2))
+
+
+### Features
+
+* ✨ 支持swagger导入 ([be5b00d](https://gitee.com/newgateway/vtj/commits/be5b00dbe8bb6b5907ff0de50240b34db52f1a75))
+
+
+
+
+
+## [0.13.13](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.12...@vtj/ui@0.13.13) (2025-08-22)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.12](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.11...@vtj/ui@0.13.12) (2025-08-20)
+
+
+### Bug Fixes
+
+* 🐛 x-tabs style ([865e1a2](https://gitee.com/newgateway/vtj/commits/865e1a268af0a77f1a39a8b239b63e18e7058c44))
+
+
+
+
+
+## [0.13.11](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.10...@vtj/ui@0.13.11) (2025-08-16)
+
+
+### Bug Fixes
+
+* 🐛 x-attachment style ([27a4c0e](https://gitee.com/newgateway/vtj/commits/27a4c0ec180e003f995cb5052abbf7379ee7c977))
+
+
+
+
+
+## [0.13.10](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.9...@vtj/ui@0.13.10) (2025-08-16)
+
+
+### Bug Fixes
+
+* 🐛 x-attachment style ([d634c9c](https://gitee.com/newgateway/vtj/commits/d634c9cd5fbc9fbbda8b0542e2ba1a2df2f69d84))
+
+
+### Features
+
+* ✨ 文件选取器 ([77e2d69](https://gitee.com/newgateway/vtj/commits/77e2d692a260f049f75cd0079c54fd6228056d6c))
+
+
+
+
+
+## [0.13.9](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.8...@vtj/ui@0.13.9) (2025-08-14)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.8](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.7...@vtj/ui@0.13.8) (2025-08-13)
+
+
+### Bug Fixes
+
+* 🐛 mask disabled inner padding ([d9c61cd](https://gitee.com/newgateway/vtj/commits/d9c61cd5af79d20c0dc7c5fa2d388ab36f22043e))
+
+
+
+
+
+## [0.13.7](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.6...@vtj/ui@0.13.7) (2025-08-08)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.6](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.5...@vtj/ui@0.13.6) (2025-08-08)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.5](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.4...@vtj/ui@0.13.5) (2025-08-07)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.4](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.3...@vtj/ui@0.13.4) (2025-08-07)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.3](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.2...@vtj/ui@0.13.3) (2025-08-07)
+
+
+### Bug Fixes
+
+* 🐛 mask pure 改为路由meta控制 ([aebcc7b](https://gitee.com/newgateway/vtj/commits/aebcc7b4f0021bc2ae6147007568d6f4417a94a6))
+* 🐛 tab style ([b76a97c](https://gitee.com/newgateway/vtj/commits/b76a97c4ab500aad6984ae74c702292066f66c79))
+
+
+
+
+
+## [0.13.2](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.1...@vtj/ui@0.13.2) (2025-08-06)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+## [0.13.1](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.13.0...@vtj/ui@0.13.1) (2025-08-06)
+
+**Note:** Version bump only for package @vtj/ui
+
+
+
+
+
+# [0.13.0](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.12.70...@vtj/ui@0.13.0) (2025-08-06)
+
+
+### Bug Fixes
+
+* 🐛 initRuntimeGlobals ([c8cfc9b](https://gitee.com/newgateway/vtj/commits/c8cfc9bae6cef714ede1e737025dc98a98808b9e))
+
+
+### Features
+
+* ✨ project支持activeFiles ([3bb2b02](https://gitee.com/newgateway/vtj/commits/3bb2b0243dd601f15fb71d9b17f7883cf5511a4f))
+
+
+
+
+
 ## [0.12.70](https://gitee.com/newgateway/vtj/compare/@vtj/ui@0.12.69...@vtj/ui@0.12.70) (2025-08-01)
 
 **Note:** Version bump only for package @vtj/ui

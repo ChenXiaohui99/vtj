@@ -34,6 +34,48 @@
               </div>
               <ElEmpty v-if="!searchResult.length"></ElEmpty>
             </div>
+            <div v-show="currentTab === 'pages'">
+              <ElInput
+                v-model="pageKeyword"
+                size="small"
+                clearable
+                :prefix-icon="Search"
+                placeholder="筛选可用项"></ElInput>
+              <ElDivider border-style="dotted">可用页面路由</ElDivider>
+              <div>
+                <Item
+                  v-for="item in pages"
+                  :title="item.title"
+                  :subtitle="item.path"
+                  background
+                  :actions="['copy']"
+                  small
+                  @click="onPicker(`this.$router.push('${item.path}')`)"
+                  @action="onCopy(item.path)"></Item>
+              </div>
+              <ElEmpty v-if="!pages.length"></ElEmpty>
+            </div>
+            <div v-show="currentTab === 'i18n'">
+              <ElInput
+                v-model="i18nKeyword"
+                size="small"
+                clearable
+                :prefix-icon="Search"
+                placeholder="筛选可用项"></ElInput>
+              <ElDivider border-style="dotted">可用国际化配置</ElDivider>
+              <div>
+                <Item
+                  v-for="item in i18nMessages"
+                  :title="item['zh-CN']"
+                  :subtitle="item.key"
+                  background
+                  :actions="['copy']"
+                  small
+                  @click="onPicker(`this.$t('${item.key}')`)"
+                  @action="onCopy(item.key)"></Item>
+              </div>
+              <ElEmpty v-if="!i18nMessages.length"></ElEmpty>
+            </div>
             <Viewer
               v-show="currentTab === 'viewer'"
               :context="props.context"
@@ -61,7 +103,8 @@
                 v-if="unbindEnabled"
                 type="warning"
                 size="default"
-                @click="onUnbind">
+                @click="onUnbind"
+                :disabled="props.disabled">
                 移除绑定
               </ElButton>
             </XContainer>
@@ -69,7 +112,11 @@
               <ElButton type="default" size="default" @click="onCancel">
                 取消
               </ElButton>
-              <ElButton type="primary" size="default" @click="onSubmit">
+              <ElButton
+                type="primary"
+                size="default"
+                @click="onSubmit"
+                :disabled="props.disabled">
                 确定
               </ElButton>
             </XContainer>
@@ -80,7 +127,7 @@
   </XDialog>
 </template>
 <script lang="ts" setup>
-  import { ref } from 'vue';
+  import { ref, computed } from 'vue';
   import { XDialog, XContainer, XForm, XPanel } from '@vtj/ui';
   import { Search } from '@vtj/icons';
   import { type Context } from '@vtj/renderer';
@@ -106,6 +153,7 @@
     modelValue?: boolean;
     submitMethod?: (model: Record<string, any>) => Promise<boolean>;
     unbindEnabled?: boolean;
+    disabled?: boolean;
   }
 
   const props = defineProps<Props>();
@@ -118,7 +166,10 @@
     'close'
   ]);
 
-  const { searchResult, keyword } = useBinder(props.block, props.context);
+  const { searchResult, keyword, engine } = useBinder(
+    props.block,
+    props.context
+  );
   const { copy } = useClipboard({});
 
   const tabs = [
@@ -129,10 +180,47 @@
     {
       name: 'viewer',
       label: '高级'
+    },
+    {
+      name: 'pages',
+      label: '路由'
+    },
+    {
+      name: 'i18n',
+      label: '国际化'
     }
   ];
   const currentTab = ref('normal');
   const formRef = ref();
+  const pageKeyword = ref('');
+  const i18nKeyword = ref('');
+  const { pageRouteName, pageBasePath } = engine.options;
+  const pages = computed(() => {
+    const list =
+      engine.project.value?.getPageRoutes(pageRouteName, pageBasePath) || [];
+    return pageKeyword.value
+      ? list.filter((n) => {
+          return (
+            n.name.includes(pageKeyword.value) ||
+            n.title.includes(pageKeyword.value) ||
+            n.id.includes(pageKeyword.value)
+          );
+        })
+      : list;
+  });
+
+  const i18nMessages = computed(() => {
+    const list = engine.project.value?.i18n.messages ?? [];
+    return i18nKeyword.value
+      ? list.filter((n) => {
+          return (
+            n.key.includes(i18nKeyword.value) ||
+            n['zh-CN'].includes(i18nKeyword.value) ||
+            n.en.includes(i18nKeyword.value)
+          );
+        })
+      : list;
+  });
 
   const handleSubmit = async (model: any) => {
     emits('submit', model);

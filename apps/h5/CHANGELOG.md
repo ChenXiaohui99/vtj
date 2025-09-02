@@ -3,6 +3,159 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.16](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.15...vtj-project-h5@0.13.16) (2025-09-02)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.15](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.14...vtj-project-h5@0.13.15) (2025-09-01)
+
+
+### Bug Fixes
+
+* 🐛 vue-i18n依赖 ([3b9090c](https://github.com/samchen08/vtj.pro/commit/3b9090c3b622f567831e248d3c3ef3e7837b7fa3))
+
+
+### Features
+
+* ✨ 国际化 ([54e3c5b](https://github.com/samchen08/vtj.pro/commit/54e3c5be0e868b497a4c2f36c40039b47925cccc))
+
+
+
+
+
+## [0.13.14](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.13...vtj-project-h5@0.13.14) (2025-08-28)
+
+
+### Bug Fixes
+
+* 🐛 全局设置box-sizing: border-box ([38efeda](https://github.com/samchen08/vtj.pro/commit/38efeda500a894141e2ddb35025757d32a88fdf2))
+
+
+
+
+
+## [0.13.13](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.12...vtj-project-h5@0.13.13) (2025-08-22)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.12](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.11...vtj-project-h5@0.13.12) (2025-08-20)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.11](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.10...vtj-project-h5@0.13.11) (2025-08-16)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.10](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.9...vtj-project-h5@0.13.10) (2025-08-16)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.9](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.8...vtj-project-h5@0.13.9) (2025-08-14)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.8](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.7...vtj-project-h5@0.13.8) (2025-08-13)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.7](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.6...vtj-project-h5@0.13.7) (2025-08-08)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.6](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.5...vtj-project-h5@0.13.6) (2025-08-08)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.5](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.4...vtj-project-h5@0.13.5) (2025-08-07)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.4](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.3...vtj-project-h5@0.13.4) (2025-08-07)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.3](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.2...vtj-project-h5@0.13.3) (2025-08-07)
+
+
+### Bug Fixes
+
+* 🐛 template add pinia ([a55107e](https://github.com/samchen08/vtj.pro/commit/a55107e6c55c762d34d77500b9145ef793dfde55))
+
+
+
+
+
+## [0.13.2](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.1...vtj-project-h5@0.13.2) (2025-08-06)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
+## [0.13.1](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.13.0...vtj-project-h5@0.13.1) (2025-08-06)
+
+
+### Bug Fixes
+
+* 🐛 h5平台创建页面表单禁用mask ([6d16497](https://github.com/samchen08/vtj.pro/commit/6d164970b8171b8d7292ffeb1942d6fc09ff5b27))
+
+
+
+
+
+# [0.13.0](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.12.70...vtj-project-h5@0.13.0) (2025-08-06)
+
+**Note:** Version bump only for package vtj-project-h5
+
+
+
+
+
 ## [0.12.70](https://github.com/samchen08/vtj.pro/compare/vtj-project-h5@0.12.69...vtj-project-h5@0.12.70) (2025-08-01)
 
 **Note:** Version bump only for package vtj-project-h5

@@ -1,5 +1,24 @@
 <template>
   <Panel class="v-apis-widget" title="API管理" plus @plus="onPlus">
+    <template #pre-actions>
+      <ElUpload
+        class="import-swagger"
+        :show-file-list="false"
+        :multiple="false"
+        :limit="1"
+        accept=".json"
+        :before-upload="onBeforeUpload">
+        <XAction
+          mode="icon"
+          label="OpenAPI / Swagger"
+          size="small"
+          background="always"
+          type="info"
+          :icon="VtjIconOpenapi"
+          title="导入 OpenAPI/Swagger JSON"></XAction>
+      </ElUpload>
+      <ElDivider direction="vertical"></ElDivider>
+    </template>
     <div class="v-apis__search">
       <ElInput
         size="small"
@@ -35,22 +54,38 @@
       :model="formModel"
       :project="project"
       :categories="categories"></DialogForm>
+    <Swagger
+      v-if="swaggerVisible"
+      v-model="swaggerVisible"
+      :data="swaggerApis"
+      :saveApis="saveApis"></Swagger>
   </Panel>
 </template>
 <script lang="ts" setup>
   import { ref, computed } from 'vue';
   import { type ApiSchema } from '@vtj/core';
   import { cloneDeep, groupBy } from '@vtj/utils';
-  import { Search } from '@vtj/icons';
-  import { ElEmpty, ElInput, ElCollapse, ElCollapseItem } from 'element-plus';
-
+  import { Search, VtjIconOpenapi } from '@vtj/icons';
+  import { XAction } from '@vtj/ui';
+  import {
+    ElEmpty,
+    ElInput,
+    ElCollapse,
+    ElCollapseItem,
+    ElUpload,
+    ElDivider
+  } from 'element-plus';
+  import { isJSFunction, parseFunction } from '@vtj/renderer';
   import DialogForm from './form.vue';
+  import Swagger from './swagger.vue';
   import { Panel, Item } from '../../shared';
-  import { useProject } from '../../hooks';
+  import { useProject, useSwagger } from '../../hooks';
   defineOptions({
     name: 'ApisWidget'
   });
   const { project } = useProject();
+  const { swaggerVisible, onBeforeUpload, swaggerApis, saveApis } =
+    useSwagger();
   const visible = ref(false);
   const formModel = ref<any>(null);
   const keyword = ref('');
@@ -78,6 +113,15 @@
   const defaultCollapseValue = computed(() => categories.value[0]);
   const collapseValue = ref(defaultCollapseValue.value);
 
+  const defaultSettings = computed(() => {
+    const axios = project.value?.globals?.axios;
+    if (axios && isJSFunction(axios) && axios.value) {
+      const func = parseFunction(axios, {}, false, false, true);
+      const config = func({});
+      return config?.settings || {};
+    }
+  });
+
   const createEmptyFormModel = () => {
     return {
       id: '',
@@ -91,7 +135,8 @@
         validSuccess: true,
         originResponse: false,
         injectHeaders: false,
-        type: 'form'
+        type: 'form',
+        ...defaultSettings.value
       },
       headers: {
         type: 'JSExpression',
@@ -141,3 +186,10 @@
     visible.value = true;
   };
 </script>
+
+<style lang="scss" scoped>
+  .import-swagger {
+    display: inline-flex;
+    margin-right: 5px;
+  }
+</style>

@@ -73,6 +73,16 @@ export interface ProjectSchema {
   uniConfig?: UniConfig;
 
   /**
+   * （Web、H5）应用全局配置
+   */
+  globals?: GlobalConfig;
+
+  /**
+   * 国际化
+   */
+  i18n?: I18nConfig;
+
+  /**
    * 标记
    */
   __VTJ_PROJECT__?: boolean;
@@ -94,7 +104,7 @@ export interface ProjectSchema {
 }
 
 /**
- * 项目配置信息
+ * 项目母版配置信息
  */
 export interface ProjectConfig {
   /**
@@ -178,4 +188,89 @@ export interface UniConfig {
    * onExit	监听应用退出
    */
   onExit?: JSFunction;
+}
+
+/**
+ * 应用全局配置项
+ */
+export interface GlobalConfig {
+  /**
+   * 应用全局样式
+   */
+  css?: string;
+
+  /**
+   * 应用全局状态
+   */
+  store?: JSFunction;
+
+  /**
+   * 权限控制插件配置项
+   */
+  access?: JSFunction;
+
+  /**
+   * 应用增强函数
+   */
+  enhance?: JSFunction;
+
+  /**
+   * 请求工具配置项
+   */
+  axios?: JSFunction;
+
+  /**
+   * 请求拦截器
+   */
+  request?: JSFunction;
+
+  /**
+   * 响应拦截器
+   */
+  response?: JSFunction;
+
+  /**
+   * 前置路由守卫
+   */
+  beforeEach?: JSFunction;
+
+  /**
+   * 后置路由守卫
+   */
+  afterEach?: JSFunction;
+}
+
+/**
+ * 国际化配置
+ */
+export interface I18nConfig {
+  /**
+   * 默认本地化语言
+   */
+  locale?: I18nLocale;
+
+  /**
+   * 兜底语言
+   */
+  fallbackLocale?: I18nLocale;
+
+  /**
+   * 语言包
+   */
+  messages?: I18nMessage[];
+}
+
+/**
+ * 本地语言名
+ */
+export type I18nLocale = 'zh-CN' | 'en';
+
+/**
+ * 语言信息项
+ */
+export interface I18nMessage {
+  key: string;
+  ['zh-CN']: string;
+  en: string;
+  [index: string]: string;
 }

@@ -9,6 +9,7 @@
           :current="current"
           :context="context"
           :value="vIf.value"
+          :disabled="hasNextBranch"
           @change="onValueChange">
         </SetterWrapper>
         <SetterWrapper
@@ -19,6 +20,7 @@
           :current="current"
           :context="context"
           :value="vElseIf.value"
+          :disabled="hasNextBranch"
           @change="onValueChange">
         </SetterWrapper>
         <SetterWrapper
@@ -29,9 +31,9 @@
           :current="current"
           :context="context"
           :value="!!vElse.value"
+          :disabled="hasNextBranch"
           @change="onValueChange">
         </SetterWrapper>
-
         <SetterWrapper
           name="vShow"
           label="v-show"
@@ -82,6 +84,7 @@
           :current="current"
           :context="context"
           :value="vFor.iterator?.item"
+          :disabled="!vFor.value"
           @change="onForChange">
         </SetterWrapper>
         <SetterWrapper
@@ -94,6 +97,7 @@
           :current="current"
           :context="context"
           :value="vFor.iterator?.index"
+          :disabled="!vFor.value"
           @change="onForChange">
         </SetterWrapper>
       </ElForm>
@@ -163,6 +167,7 @@
             :current="current"
             :context="context"
             :value="item.value"
+            :disabled="!item.name"
             :onChange="onCustomChange(item)">
           </SetterWrapper>
           <SetterWrapper
@@ -172,6 +177,7 @@
             :current="current"
             :context="context"
             :value="item.arg"
+            :disabled="!item.name"
             :onChange="onCustomChange(item)">
           </SetterWrapper>
           <SetterWrapper
@@ -181,6 +187,7 @@
             :current="current"
             :context="context"
             :value="item.modifiers"
+            :disabled="!item.name"
             :onChange="onCustomChange(item)"
             :variable="false">
           </SetterWrapper>
@@ -220,7 +227,8 @@
     onAddCustom,
     onRemoveCustom,
     onCustomChange,
-    branchVisiable
+    branchVisiable,
+    hasNextBranch
   } = useDirectives(selected);
 
   const getModelArgName = (vModel: DirectiveModel) => {

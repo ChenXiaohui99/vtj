@@ -18,7 +18,9 @@
   "dependencies": {
     "@vtj/web": "latest",
     "vue": "~3.5.0",
-    "vue-router": "~4.5.0"
+    "vue-router": "~4.5.0",
+    "pinia": "~3.0.2",
+    "vue-i18n": "~11.1.11"
   },
   "devDependencies": {
     "@vtj/cli": "latest",

@@ -15,7 +15,10 @@ import type {
   MetaSchema,
   ProjectConfig,
   UniConfig,
-  PlatformType
+  PlatformType,
+  GlobalConfig,
+  JSFunction,
+  I18nConfig
 } from '../protocols';
 import { emitter, type ModelEventType } from '../tools';
 import { BlockModel } from './block';
@@ -90,6 +93,12 @@ export class ProjectModel {
   currentFile: PageFile | BlockFile | null = null;
   config: ProjectConfig = {};
   uniConfig: UniConfig = {};
+  globals: GlobalConfig = {};
+  i18n: I18nConfig = {
+    locale: 'zh-CN',
+    fallbackLocale: 'zh-CN',
+    messages: []
+  };
   __BASE_PATH__: string = '/';
   __UID__: string = uuid(true);
   static attrs: string[] = [
@@ -105,6 +114,8 @@ export class ProjectModel {
     'meta',
     'config',
     'uniConfig',
+    'globals',
+    'i18n',
     '__BASE_PATH__',
     '__UID__'
   ];
@@ -499,6 +510,10 @@ export class ProjectModel {
     return this.blocks.find((n) => n.id === id);
   }
 
+  getFile(id: string): BlockFile | PageFile | undefined {
+    return this.getPage(id) || this.getBlock(id);
+  }
+
   /**
    * 创建区块
    * @param block
@@ -661,6 +676,22 @@ export class ProjectModel {
       emitter.emit(EVENT_PROJECT_CHANGE, event);
     }
   }
+
+  setApis(items: ApiSchema[], silent: boolean = false) {
+    for (const item of items) {
+      this.setApi(item, true);
+    }
+    if (!silent) {
+      const event: ProjectModelEvent = {
+        model: this,
+        type: 'create',
+        data: items
+      };
+      emitter.emit(EVENT_PROJECT_APIS_CHANGE, event);
+      emitter.emit(EVENT_PROJECT_CHANGE, event);
+    }
+  }
+
   /**
    * 删除api
    * @param name
@@ -775,6 +806,34 @@ export class ProjectModel {
     }
   }
 
+  setGloblas(
+    key: keyof GlobalConfig,
+    value: string | JSFunction,
+    silent: boolean = false
+  ) {
+    this.globals = Object.assign(this.globals, { [key]: value });
+    if (!silent) {
+      const event: ProjectModelEvent = {
+        model: this,
+        type: 'update',
+        data: this.globals
+      };
+      emitter.emit(EVENT_PROJECT_CHANGE, event);
+    }
+  }
+
+  setI18n(i18n: I18nConfig, silent: boolean = false) {
+    this.i18n = Object.assign(this.i18n, i18n);
+    if (!silent) {
+      const event: ProjectModelEvent = {
+        model: this,
+        type: 'update',
+        data: this.i18n
+      };
+      emitter.emit(EVENT_PROJECT_CHANGE, event);
+    }
+  }
+
   publish(file?: PageFile | BlockFile) {
     const event: ProjectModelEvent = {
       model: this,
@@ -817,5 +876,20 @@ export class ProjectModel {
       data: null
     };
     emitter.emit(EVENT_PROJECT_CHANGE, event);
+  }
+  getPageRoutes(pageRouteName?: string, pageBasePath?: string) {
+    const isUniapp = this.platform === 'uniapp';
+    const pageDir = pageRouteName || (isUniapp ? 'pages' : 'page');
+    const pages = this.getPages();
+    const base = pageBasePath || '';
+    return pages.map((n) => {
+      return {
+        id: n.id,
+        path: `${base}/${pageDir}/${n.id}`,
+        name: n.name,
+        title: n.title,
+        meta: n.meta
+      };
+    });
   }
 }

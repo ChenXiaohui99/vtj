@@ -31,6 +31,9 @@ import Market from './market/index.vue';
 import Templates from './templates/index.vue';
 import UserAvatar from './user-avatar/index.vue';
 import AI from './ai/index.vue';
+import Globals from './globals/index.vue';
+import I18n from './i18n/index.vue';
+
 export const widgets = {
   Logo,
   EmptyWidget,
@@ -64,5 +67,7 @@ export const widgets = {
   Market,
   Templates,
   UserAvatar,
-  AI
+  AI,
+  Globals,
+  I18n
 };

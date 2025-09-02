@@ -3,6 +3,179 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.16](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.15...@vtj/renderer@0.13.16) (2025-09-02)
+
+
+### Bug Fixes
+
+* 🐛 修复全局请求拦截重复触发问题, 全局注入app.config.globalProperties.$libs ([ab366f4](https://gitee.com/newgateway/vtj/commits/ab366f4789926ecd08d9f60ec09ecc0de6aa6c6e))
+
+
+
+
+
+## [0.13.15](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.14...@vtj/renderer@0.13.15) (2025-09-01)
+
+
+### Features
+
+* ✨ 国际化 ([54e3c5b](https://gitee.com/newgateway/vtj/commits/54e3c5be0e868b497a4c2f36c40039b47925cccc))
+* ✨ 增加 vue-i18n依赖 ([2227b02](https://gitee.com/newgateway/vtj/commits/2227b0212e085d1109ed8d6edfdf14aa4758cd80))
+
+
+
+
+
+## [0.13.14](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.13...@vtj/renderer@0.13.14) (2025-08-28)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.13.13](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.12...@vtj/renderer@0.13.13) (2025-08-22)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.13.12](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.11...@vtj/renderer@0.13.12) (2025-08-20)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.13.11](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.10...@vtj/renderer@0.13.11) (2025-08-16)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.13.10](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.9...@vtj/renderer@0.13.10) (2025-08-16)
+
+
+### Bug Fixes
+
+* 🐛 处理模拟数据异常 ([0c84693](https://gitee.com/newgateway/vtj/commits/0c8469370c1bed666010b69575a90cba26962d4b))
+
+
+
+
+
+## [0.13.9](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.8...@vtj/renderer@0.13.9) (2025-08-14)
+
+
+### Bug Fixes
+
+* 🐛 修复模拟数据错误 ([de85e47](https://gitee.com/newgateway/vtj/commits/de85e4717268b5ed2d0d1179d5c39f98894248ab))
+
+
+
+
+
+## [0.13.8](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.7...@vtj/renderer@0.13.8) (2025-08-13)
+
+
+### Bug Fixes
+
+* 🐛 源码模式初始化找不到页面时显示启动页 ([71c6792](https://gitee.com/newgateway/vtj/commits/71c67926c585c35119b532610608d1649777124a))
+
+
+
+
+
+## [0.13.7](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.6...@vtj/renderer@0.13.7) (2025-08-08)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.13.6](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.5...@vtj/renderer@0.13.6) (2025-08-08)
+
+
+### Bug Fixes
+
+* 🐛 coder parseWatch ([2ecfc5a](https://gitee.com/newgateway/vtj/commits/2ecfc5a82e848d83b4000f931d992e152b6fa47b))
+
+
+
+
+
+## [0.13.5](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.4...@vtj/renderer@0.13.5) (2025-08-07)
+
+
+### Bug Fixes
+
+* 🐛 access showTip ([b65ee84](https://gitee.com/newgateway/vtj/commits/b65ee84679cb725adbc3cff0435dee07044c9a00))
+* 🐛 globals access inject alert ([fcf1403](https://gitee.com/newgateway/vtj/commits/fcf14039e9948728c3ffe25e8faa464c00083fa0))
+
+
+
+
+
+## [0.13.4](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.3...@vtj/renderer@0.13.4) (2025-08-07)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+## [0.13.3](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.2...@vtj/renderer@0.13.3) (2025-08-07)
+
+
+### Bug Fixes
+
+* 🐛 mask pure 改为路由meta控制 ([aebcc7b](https://gitee.com/newgateway/vtj/commits/aebcc7b4f0021bc2ae6147007568d6f4417a94a6))
+
+
+
+
+
+## [0.13.2](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.1...@vtj/renderer@0.13.2) (2025-08-06)
+
+
+### Bug Fixes
+
+* 🐛 access路由守卫 ([c4219b9](https://gitee.com/newgateway/vtj/commits/c4219b978a5cdc6417b0a4f2dc9240c5527089f1))
+
+
+
+
+
+## [0.13.1](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.13.0...@vtj/renderer@0.13.1) (2025-08-06)
+
+**Note:** Version bump only for package @vtj/renderer
+
+
+
+
+
+# [0.13.0](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.70...@vtj/renderer@0.13.0) (2025-08-06)
+
+
+### Bug Fixes
+
+* 🐛 initRuntimeGlobals ([c8cfc9b](https://gitee.com/newgateway/vtj/commits/c8cfc9bae6cef714ede1e737025dc98a98808b9e))
+
+
+### Features
+
+* ✨ 应用全局配置 ([9a17f63](https://gitee.com/newgateway/vtj/commits/9a17f63208816006396d04480283c1df26e187fb))
+
+
+
+
+
 ## [0.12.70](https://gitee.com/newgateway/vtj/compare/@vtj/renderer@0.12.69...@vtj/renderer@0.12.70) (2025-08-01)
 
 **Note:** Version bump only for package @vtj/renderer

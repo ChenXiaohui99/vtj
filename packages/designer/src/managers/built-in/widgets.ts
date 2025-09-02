@@ -17,11 +17,13 @@ import {
   VtjIconHistory,
   VtjIconApi,
   VtjIconCategory,
-  VtjIconSetting,
   HomeFilled,
   VtjIconTemplate,
   VtjIconUniapp,
-  VtjIconAi
+  VtjIconAi,
+  VtjIconMaster,
+  VtjIconGlobal,
+  VtjIconLang
 } from '@vtj/icons';
 import { markRaw } from 'vue';
 
@@ -135,8 +137,26 @@ export const builtInWidgets: Array<AppWidget | TabWidget | Widget> = [
     component: widgets.ProjectConfig,
     type: 'app',
     openType: 'panel',
-    icon: VtjIconSetting,
-    label: '项目配置'
+    icon: VtjIconMaster,
+    label: '母版设置'
+  },
+  {
+    name: 'Globals',
+    region: 'Apps',
+    component: widgets.Globals,
+    type: 'app',
+    openType: 'panel',
+    icon: VtjIconGlobal,
+    label: '应用设置'
+  },
+  {
+    name: 'I18n',
+    region: 'Apps',
+    component: widgets.I18n,
+    type: 'app',
+    openType: 'panel',
+    icon: VtjIconLang,
+    label: '国际化资源'
   },
   {
     name: 'AI',
@@ -195,6 +215,7 @@ export const builtInWidgets: Array<AppWidget | TabWidget | Widget> = [
   },
   {
     name: 'Docs',
+    invisible: true,
     region: 'Workspace',
     component: widgets.Docs,
     type: 'tab',

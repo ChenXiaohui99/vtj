@@ -20,7 +20,7 @@
           :options="props.options"
           v-model="modelValue"
           @change="onChange"
-          :disabled="isBinding"></component>
+          :disabled="isBinding || props.disabled"></component>
         <ElInput
           v-if="isBinding"
           class="v-expression-setter"
@@ -72,7 +72,8 @@
       :value="binderValue"
       v-model="binderVisible"
       :submitMethod="onVarsSubmit"
-      @unbind="onVarsRemove"></VariableBinder>
+      @unbind="onVarsRemove"
+      :disabled="props.disabled"></VariableBinder>
   </ElFormItem>
 </template>
 <script lang="ts" setup>
@@ -111,6 +112,7 @@
     defaultSetter?: string;
     removable?: boolean;
     switchDisabled?: boolean;
+    disabled?: boolean;
   }
 
   const props = withDefaults(defineProps<Props>(), {

@@ -51,7 +51,7 @@ import {
   ACCESS,
   type ProvideAdapter
 } from '@vtj/renderer';
-import { logger, isBoolean } from '@vtj/utils';
+import { logger, isBoolean, delay } from '@vtj/utils';
 import { SkeletonWrapper, type SkeletonWrapperInstance } from '../wrappers';
 import { depsManager, widgetManager } from '../managers';
 import { Simulator } from './simulator';
@@ -234,18 +234,37 @@ export class Engine extends Base {
    * @param project 项目Schema
    */
   private async init(project: ProjectSchema) {
+    const platform = project.platform;
+    if (platform) {
+      project.dependencies = depsManager.merge(
+        project.dependencies || [],
+        platform
+      );
+    }
+
     const dsl = await this.service.init(project, true).catch((e) => {
       logger.warn('VTJEngine service init fail.', e);
       return null;
     });
+
     if (dsl) {
-      const platform = dsl.platform || 'web';
-      if (platform === 'uniapp') {
+      if (dsl.platform === 'uniapp') {
         widgetManager.set('UniConfig', {
           invisible: false
         });
+        widgetManager.set('Globals', {
+          invisible: true
+        });
       }
-      dsl.dependencies = depsManager.merge(dsl.dependencies || [], platform);
+      if (dsl.platform !== 'web') {
+        widgetManager.set('ProjectConfig', {
+          invisible: true
+        });
+      }
+      dsl.dependencies = depsManager.merge(
+        dsl.dependencies || [],
+        dsl.platform
+      );
       this.project.value = new ProjectModel(dsl);
       this.provider.project = this.project.value;
       this.saveMaterials();
@@ -648,23 +667,32 @@ export class Engine extends Base {
    */
   async openFile(fileId?: string) {
     const project = this.project.value;
+    if (!project) return;
     const apps = this.skeleton?.getRegion('Apps');
-    const id = fileId || project?.homepage;
+    let id = fileId || project.homepage;
+    const pages = project.getPages();
+    if (!id) {
+      id = pages[0]?.id;
+    }
     if (!project || !apps || !id) return;
 
     const page = project.getPage(id);
     if (page && !page.raw) {
       apps.regionRef?.setActive('Pages');
-      this.simulator.ready(() => {
+      this.simulator.ready(async () => {
         project.active(page);
+        await delay(1000);
+        this.simulator.designer.value?.setSelected(this.current.value);
       });
     }
 
     const block = project.getBlock(id);
     if (block) {
       apps.regionRef?.setActive('Blocks');
-      this.simulator?.ready(() => {
+      this.simulator?.ready(async () => {
         project.active(block);
+        await delay(1000);
+        this.simulator.designer.value?.setSelected(this.current.value);
       });
     }
   }

@@ -1,5 +1,5 @@
 <template>
-  <Panel class="v-project-config-widget" title="项目配置">
+  <Panel class="v-project-config-widget" title="母版设置">
     <XForm
       v-if="project"
       :footer="false"
@@ -12,7 +12,10 @@
         label="Logo"
         name="logo"
         :editor="FileSetter"
-        :props="{ attachment: { accept: '.png,.jpg,.jpeg' } }"></XField>
+        :props="{
+          attachment: { accept: '.png,.jpg,.jpeg,.gif,.svg' },
+          acceptFilter: true
+        }"></XField>
       <XField label="主题切换" name="themeSwitchable" editor="switch"></XField>
       <!-- <XField label="模拟数据" name="mock" editor="switch"></XField> -->
     </XForm>

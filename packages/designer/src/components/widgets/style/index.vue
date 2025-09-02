@@ -9,6 +9,7 @@
       v-else
       :key="`widget-style-${node?.id}`"
       class="v-style-widget"
+      :overflow="isExpStyle ? 'hidden' : 'auto'"
       direction="column"
       fit>
       <Layout
@@ -96,7 +97,7 @@
       string,
       any
     >;
-    if (value !== undefined && value !== '') {
+    if (value !== undefined && value !== '' && value !== null) {
       style[name] = value;
     } else {
       delete style[name];

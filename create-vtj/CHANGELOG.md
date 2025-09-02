@@ -3,6 +3,66 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.13](https://gitee.com/newgateway/vtj/compare/create-vtj@0.12.12...create-vtj@0.12.13) (2025-09-01)
+
+
+### Bug Fixes
+
+* 🐛 vue-i18n依赖 ([3b9090c](https://gitee.com/newgateway/vtj/commits/3b9090c3b622f567831e248d3c3ef3e7837b7fa3))
+
+
+### Features
+
+* ✨ 国际化 ([54e3c5b](https://gitee.com/newgateway/vtj/commits/54e3c5be0e868b497a4c2f36c40039b47925cccc))
+
+
+
+
+
+## [0.12.12](https://gitee.com/newgateway/vtj/compare/create-vtj@0.12.11...create-vtj@0.12.12) (2025-08-28)
+
+
+### Bug Fixes
+
+* 🐛 全局设置box-sizing: border-box ([38efeda](https://gitee.com/newgateway/vtj/commits/38efeda500a894141e2ddb35025757d32a88fdf2))
+
+
+
+
+
+## [0.12.11](https://gitee.com/newgateway/vtj/compare/create-vtj@0.12.10...create-vtj@0.12.11) (2025-08-07)
+
+
+### Bug Fixes
+
+* 🐛 模版依赖增加pinia ([5b297df](https://gitee.com/newgateway/vtj/commits/5b297df353a4ea449f25e162f9f43a1707bd41b3))
+
+
+
+
+
+## [0.12.10](https://gitee.com/newgateway/vtj/compare/create-vtj@0.12.9...create-vtj@0.12.10) (2025-08-07)
+
+
+### Bug Fixes
+
+* 🐛 template add pinia ([a55107e](https://gitee.com/newgateway/vtj/commits/a55107e6c55c762d34d77500b9145ef793dfde55))
+
+
+
+
+
+## [0.12.9](https://gitee.com/newgateway/vtj/compare/create-vtj@0.12.8...create-vtj@0.12.9) (2025-08-06)
+
+
+### Bug Fixes
+
+* 🐛 h5平台创建页面表单禁用mask ([6d16497](https://gitee.com/newgateway/vtj/commits/6d164970b8171b8d7292ffeb1942d6fc09ff5b27))
+
+
+
+
+
 ## [0.12.8](https://gitee.com/newgateway/vtj/compare/create-vtj@0.12.7...create-vtj@0.12.8) (2025-07-31)
 
 
