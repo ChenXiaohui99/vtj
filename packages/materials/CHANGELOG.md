@@ -3,6 +3,146 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.30](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.29...@vtj/materials@0.13.30) (2025-10-11)
+
+**Note:** Version bump only for package @vtj/materials
+
+
+
+
+
+## [0.13.29](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.28...@vtj/materials@0.13.29) (2025-09-26)
+
+**Note:** Version bump only for package @vtj/materials
+
+
+
+
+
+## [0.13.28](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.27...@vtj/materials@0.13.28) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/materials
+
+
+
+
+
+## [0.13.27](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.26...@vtj/materials@0.13.27) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/materials
+
+
+
+
+
+## [0.13.26](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.25...@vtj/materials@0.13.26) (2025-09-22)
+
+
+### Features
+
+* ✨ devtools ([a3ee20e](https://gitee.com/newgateway/vtj/commits/a3ee20ec87064a6bfa71b99d538ffabdb68ea676))
+* ✨ uniapp devtools ([a26a7af](https://gitee.com/newgateway/vtj/commits/a26a7af5a4f9202ade01f5a91222385fbf8abd42))
+
+
+
+
+
+## [0.13.25](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.24...@vtj/materials@0.13.25) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 uniapp添加全局uni对象 ([c6a3ee5](https://gitee.com/newgateway/vtj/commits/c6a3ee5c8dc47d840785fd25b920f94a3763fb51))
+
+
+
+
+
+## [0.13.24](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.23...@vtj/materials@0.13.24) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/materials
+
+
+
+
+
+## [0.13.23](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.22...@vtj/materials@0.13.23) (2025-09-12)
+
+
+### Bug Fixes
+
+* 🐛 uni-ui物料错误 ([08d8eeb](https://gitee.com/newgateway/vtj/commits/08d8eebb711aa893ec941047fd2a279bb6d61702))
+
+
+
+
+
+## [0.13.22](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.21...@vtj/materials@0.13.22) (2025-09-11)
+
+
+### Bug Fixes
+
+* 🐛 物料 uni-ui ([ce20f7c](https://gitee.com/newgateway/vtj/commits/ce20f7caa64cd469f16b91179408e9b25f9111e5))
+* 🐛 element-plus runtime locale ([a6a960c](https://gitee.com/newgateway/vtj/commits/a6a960cfe38af25ad6548e1790e5f1e381f3a70f))
+
+
+
+
+
+## [0.13.21](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.20...@vtj/materials@0.13.21) (2025-09-11)
+
+
+### Bug Fixes
+
+* 🐛 物料-uni-ui ([bd47eab](https://gitee.com/newgateway/vtj/commits/bd47eabc8af8f0e166054981745cb60c8c9e81dc))
+* 🐛 物料-uni-ui ([f53b75a](https://gitee.com/newgateway/vtj/commits/f53b75aa665b0319b3de24968f74a45b93f2c6c2))
+* 🐛 uni-ui 物料 ([1adc721](https://gitee.com/newgateway/vtj/commits/1adc7216d4ed0f6c88d04e21f39e9f55a7bb2768))
+* 🐛 uni-ui 物料 ([241abec](https://gitee.com/newgateway/vtj/commits/241abec8e5237086402d5e94c36ef77d5982cabd))
+
+
+
+
+
+## [0.13.20](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.19...@vtj/materials@0.13.20) (2025-09-08)
+
+**Note:** Version bump only for package @vtj/materials
+
+
+
+
+
+## [0.13.19](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.18...@vtj/materials@0.13.19) (2025-09-06)
+
+**Note:** Version bump only for package @vtj/materials
+
+
+
+
+
+## [0.13.18](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.17...@vtj/materials@0.13.18) (2025-09-05)
+
+
+### Bug Fixes
+
+* 🐛 uni-ui编译工程 ([88d24e0](https://gitee.com/newgateway/vtj/commits/88d24e051f1f9ff63b84ee8bd27c8dee485bf49d))
+
+
+
+
+
+## [0.13.17](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.16...@vtj/materials@0.13.17) (2025-09-05)
+
+
+### Bug Fixes
+
+* 🐛 图片组件src参数支持文件上传设置器 ([94445c7](https://gitee.com/newgateway/vtj/commits/94445c723b22a91ca92d0ba19cb777b6e9c1a954))
+* 🐛 ElTableV2 物料错误 ([2cffed7](https://gitee.com/newgateway/vtj/commits/2cffed78fbf0f9011ae488c7a5f09a3e43bc06ba))
+* 🐛 uni-ui物料 ([e76b105](https://gitee.com/newgateway/vtj/commits/e76b105d2682a2a47af40a66efc472c44bbcb35a))
+
+
+
+
+
 ## [0.13.16](https://gitee.com/newgateway/vtj/compare/@vtj/materials@0.13.15...@vtj/materials@0.13.16) (2025-09-02)
 
 **Note:** Version bump only for package @vtj/materials

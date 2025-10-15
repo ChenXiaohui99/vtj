@@ -147,6 +147,11 @@ export interface EngineOptions {
    * 关闭页面内嵌到母版功能
    */
   noMask?: boolean;
+
+  /**
+   * 开发工具路径
+   */
+  devtools?: string;
 }
 
 export const SAVE_BLOCK_FILE_FINISH = 'SAVE_BLOCK_FILE_FINISH';
@@ -383,13 +388,15 @@ export class Engine extends Base {
     const dsl = e.toDsl();
     this.service.saveFile(dsl, this.project.value?.toDsl());
     this.updateCurrent(e);
-    this.history.value?.add(dsl);
-    triggerRef(this.history);
+    if (this.state.autoHistory) {
+      this.history.value?.add(dsl);
+      triggerRef(this.history);
+    }
   }
 
   private changeCurrentFile() {
     this.saveCurrentFile();
-    if (this.current.value) {
+    if (this.current.value && this.state.autoHistory) {
       this.history.value?.add(this.current.value.toDsl());
       triggerRef(this.history);
     }
@@ -537,7 +544,7 @@ export class Engine extends Base {
     const type = e.type;
     const history = e.model;
     const projectDsl = this.project.value?.toDsl();
-    if (type === 'create') {
+    if (type === 'create' || type === 'update') {
       await this.service.saveHistoryItem(
         history.id as string,
         e.data,

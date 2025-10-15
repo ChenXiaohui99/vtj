@@ -16,7 +16,7 @@ export const builtInDeps: Dependencie[] = [
     package: 'vue',
     version: 'latest',
     library: 'Vue',
-    urls: ['@vtj/materials/deps/uni-h5-vue/index.umd.js'],
+    urls: ['@vtj/materials/deps/uni-h5-vue/uni-h5-vue.prod.js'],
     assetsLibrary: BUILT_IN_VUE,
     required: true,
     official: true,
@@ -46,7 +46,7 @@ export const builtInDeps: Dependencie[] = [
     package: 'pinia',
     version: 'latest',
     library: 'Pinia',
-    urls: ['@vtj/materials/deps/pinia/pinia.iife.js'],
+    urls: ['@vtj/materials/deps/pinia/pinia.iife.prod.js'],
     required: true,
     official: true,
     enabled: true,
@@ -77,21 +77,21 @@ export const builtInDeps: Dependencie[] = [
     assetsLibrary: 'UniH5Material',
     platform: 'uniapp'
   },
-  // {
-  //   package: 'uni-ui',
-  //   version: 'latest',
-  //   library: 'UniUI',
-  //   urls: [
-  //     '@vtj/materials/deps/uni-ui/style.css',
-  //     '@vtj/materials/deps/uni-ui/index.umd.js'
-  //   ],
-  //   required: true,
-  //   official: true,
-  //   enabled: true,
-  //   assetsUrl: '@vtj/materials/assets/uni-ui/index.umd.js',
-  //   assetsLibrary: 'UniUIMaterial',
-  //   platform: 'uniapp'
-  // },
+  {
+    package: 'uni-ui',
+    version: 'latest',
+    library: 'UniUI',
+    urls: [
+      '@vtj/materials/deps/uni-ui/style.css',
+      '@vtj/materials/deps/uni-ui/index.umd.js'
+    ],
+    required: true,
+    official: true,
+    enabled: true,
+    assetsUrl: '@vtj/materials/assets/uni-ui/index.umd.js',
+    assetsLibrary: 'UniUIMaterial',
+    platform: 'uniapp'
+  },
   {
     package: '@vtj/utils',
     version: 'latest',

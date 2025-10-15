@@ -115,6 +115,8 @@ export class Provider extends Base {
   public dependencies: Record<string, () => Promise<any>> = {}; // 依赖项
   public materials: Record<string, () => Promise<any>> = {}; // 物料资源
   public library: Record<string, any> = {}; // 第三方库
+  public libraryLocales: Record<string, any> = {}; // 第三方库语言包
+  public libraryLocaleMap: Record<string, string> = {}; // 库名称->语言包映射
   public service: Service; // 核心服务
   public project: ProjectSchema | null = null; // 当前项目配置
   public components: Record<string, any> = {}; // 组件集合
@@ -259,14 +261,24 @@ export class Provider extends Base {
 
   private async loadAssets(_window: any) {
     const { dependencies: deps = [] } = this.project as ProjectSchema;
-    const { dependencies, library, components, materialPath, nodeEnv } = this;
+    const {
+      dependencies,
+      library,
+      components,
+      materialPath,
+      nodeEnv,
+      libraryLocales
+    } = this;
     const {
       libraryExports,
       libraryMap,
       materials,
       materialExports,
-      materialMapLibrary
+      materialMapLibrary,
+      libraryLocaleMap
     } = parseDeps(deps, materialPath, nodeEnv === NodeEnv.Development);
+
+    Object.assign(this.libraryLocaleMap, libraryLocaleMap);
     for (const libraryName of libraryExports) {
       const raw = dependencies[libraryName];
       const lib = _window[libraryName];
@@ -287,6 +299,12 @@ export class Provider extends Base {
         }
         library[libraryName] = _window[libraryName];
       }
+
+      const locale = libraryLocaleMap[libraryName];
+      if (locale) {
+        const raw = dependencies[locale];
+        libraryLocales[locale] = raw ? await raw() : _window[locale];
+      }
     }
 
     // 生产环境不需要物料描述文件
@@ -297,7 +315,8 @@ export class Provider extends Base {
 
       const materialMap = this.materials || {};
       for (const materialExport of materialExports) {
-        const lib = _window[materialMapLibrary[materialExport]];
+        const _lib = _window[materialMapLibrary[materialExport]];
+        const lib = _lib?.default || _lib;
         const builtInComponents = BUILT_IN_COMPONENTS[materialExport];
         if (builtInComponents) {
           if (lib) {
@@ -394,13 +413,14 @@ export class Provider extends Base {
    * @param app Vue 应用实例
    */
   install(app: App) {
+    const { libraryLocaleMap, libraryLocales } = this;
     // 记录已安装的插件
     const installed = app.config.globalProperties.installed || {};
-
     // 安装所有第三方库插件
     for (const [name, library] of Object.entries(this.library)) {
       if (!installed[name] && isVuePlugin(library)) {
-        app.use(library);
+        const locale = libraryLocales[libraryLocaleMap[name]];
+        app.use(library, { locale });
         installed[name] = true;
       }
     }

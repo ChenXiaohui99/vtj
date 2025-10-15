@@ -3,6 +3,137 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.30](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.29...@vtj/pro@0.13.30) (2025-10-11)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.29](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.28...@vtj/pro@0.13.29) (2025-09-26)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.28](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.27...@vtj/pro@0.13.28) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.27](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.26...@vtj/pro@0.13.27) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.26](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.25...@vtj/pro@0.13.26) (2025-09-22)
+
+
+### Features
+
+* ✨ cli 删除 devtools ([e6e055b](https://gitee.com/newgateway/vtj/commits/e6e055be8b90441c6c149d770d59b0cccf9c736d))
+* ✨ devtools ([a3ee20e](https://gitee.com/newgateway/vtj/commits/a3ee20ec87064a6bfa71b99d538ffabdb68ea676))
+
+
+
+
+
+## [0.13.25](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.24...@vtj/pro@0.13.25) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 uniapp添加全局uni对象 ([c6a3ee5](https://gitee.com/newgateway/vtj/commits/c6a3ee5c8dc47d840785fd25b920f94a3763fb51))
+
+
+### Features
+
+* ✨ 快捷键 ([e6dfeee](https://gitee.com/newgateway/vtj/commits/e6dfeeea8603df077dca7a034adc992b73469c3e))
+
+
+
+
+
+## [0.13.24](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.23...@vtj/pro@0.13.24) (2025-09-12)
+
+
+### Bug Fixes
+
+* 🐛 本地版本初始化依赖没保存 ([3238a96](https://gitee.com/newgateway/vtj/commits/3238a96ccbdc91b74a2b6c271aae9f59977bab61))
+* 🐛 element-plus 语言包问题 ([0cca78c](https://gitee.com/newgateway/vtj/commits/0cca78cbb47edb86c2c8fdfa315dddb653ddb1b3))
+
+
+
+
+
+## [0.13.23](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.22...@vtj/pro@0.13.23) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.22](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.21...@vtj/pro@0.13.22) (2025-09-11)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.21](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.20...@vtj/pro@0.13.21) (2025-09-11)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.20](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.19...@vtj/pro@0.13.20) (2025-09-08)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.19](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.18...@vtj/pro@0.13.19) (2025-09-06)
+
+
+### Bug Fixes
+
+* 🐛 修复 UniApp __uniConfig 初始化缺失报错 ([fca4810](https://gitee.com/newgateway/vtj/commits/fca4810bab484d933b755db2c8ffdaf1578b53bb))
+
+
+
+
+
+## [0.13.18](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.17...@vtj/pro@0.13.18) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
+## [0.13.17](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.16...@vtj/pro@0.13.17) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/pro
+
+
+
+
+
 ## [0.13.16](https://gitee.com/newgateway/vtj/compare/@vtj/pro@0.13.15...@vtj/pro@0.13.16) (2025-09-02)
 
 **Note:** Version bump only for package @vtj/pro

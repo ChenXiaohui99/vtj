@@ -3,6 +3,127 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.30](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.29...@vtj/icons@0.13.30) (2025-10-11)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.29](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.28...@vtj/icons@0.13.29) (2025-09-26)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.28](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.27...@vtj/icons@0.13.28) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.27](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.26...@vtj/icons@0.13.27) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.26](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.25...@vtj/icons@0.13.26) (2025-09-22)
+
+
+### Features
+
+* ✨ devtools ([a3ee20e](https://gitee.com/newgateway/vtj/commits/a3ee20ec87064a6bfa71b99d538ffabdb68ea676))
+
+
+
+
+
+## [0.13.25](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.24...@vtj/icons@0.13.25) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 更新图标 ([b2f9a21](https://gitee.com/newgateway/vtj/commits/b2f9a21560011a01c7b39e57265cd50ba7419118))
+
+
+
+
+
+## [0.13.24](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.23...@vtj/icons@0.13.24) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.23](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.22...@vtj/icons@0.13.23) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.22](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.21...@vtj/icons@0.13.22) (2025-09-11)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.21](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.20...@vtj/icons@0.13.21) (2025-09-11)
+
+
+### Features
+
+* ✨ 历史记录支持自动/手动/对比/打标记 ([bdf91d2](https://gitee.com/newgateway/vtj/commits/bdf91d2651b84f7b55dd72a1a7a7723d162bea2f))
+
+
+
+
+
+## [0.13.20](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.19...@vtj/icons@0.13.20) (2025-09-08)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.19](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.18...@vtj/icons@0.13.19) (2025-09-06)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.18](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.17...@vtj/icons@0.13.18) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
+## [0.13.17](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.16...@vtj/icons@0.13.17) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/icons
+
+
+
+
+
 ## [0.13.16](https://gitee.com/newgateway/vtj/compare/@vtj/icons@0.13.15...@vtj/icons@0.13.16) (2025-09-02)
 
 **Note:** Version bump only for package @vtj/icons

@@ -177,8 +177,8 @@ export const builtInWidgets: Array<AppWidget | TabWidget | Widget> = [
     icon: widgets.UserAvatar,
     label: '关于',
     props: {
-      width: 500,
-      height: 250
+      width: 550,
+      height: 260
     }
   },
   {
@@ -311,6 +311,19 @@ export const builtInWidgets: Array<AppWidget | TabWidget | Widget> = [
   {
     name: 'NodePath',
     region: 'Status',
-    component: widgets.NodePath
+    component: widgets.NodePath,
+    group: WidgetGroup.Left
+  },
+  {
+    name: 'Devtools',
+    region: 'Status',
+    component: widgets.Devtools,
+    group: WidgetGroup.Right
+  },
+  {
+    name: 'Hotkeys',
+    region: 'Status',
+    component: widgets.Hotkeys,
+    group: WidgetGroup.Right
   }
 ];

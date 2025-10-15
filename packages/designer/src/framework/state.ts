@@ -11,6 +11,17 @@ export interface LLM {
   apiKey: string;
 }
 
+const defaults = {
+  outlineEnabled: true,
+  activeEvent: true,
+  autoApply: true,
+  autoHistory: true,
+  llm: '',
+  LLMs: [],
+  tour: true,
+  dark: false
+};
+
 export interface EngineState {
   /**
    * 设计视图是否显示辅助线
@@ -26,6 +37,11 @@ export interface EngineState {
    * AI自动应用
    */
   autoApply: boolean;
+
+  /**
+   * 自动保存历史记录
+   */
+  autoHistory: boolean;
 
   /**
    * 当前使用的 AI 大模型
@@ -49,23 +65,29 @@ export interface EngineState {
 }
 
 export class State {
-  private __state: Reactive<EngineState> = reactive({
-    outlineEnabled: true,
-    activeEvent: true,
-    autoApply: true,
-    llm: '',
-    LLMs: [],
-    tour: true,
-    dark: false
-  });
+  private __state: Reactive<EngineState> = reactive(defaults);
 
-  private __isDark = useDark();
+  private __isDark = useDark({
+    storageKey: 'color-schema'
+  });
 
   constructor() {
     const state = storage.get(STATE_KEY, { type: 'local' });
     if (state) {
       Object.assign(this.__state, state);
     }
+    this.saveDevtoolsTheme();
+  }
+
+  private saveDevtoolsTheme() {
+    storage.save('__vue-devtools-theme__', this.dark ? 'dark' : 'auto', {
+      type: 'local'
+    });
+  }
+
+  reset() {
+    storage.clear({ type: 'local' });
+    location.reload();
   }
 
   private save(key: keyof EngineState, value: any) {
@@ -98,6 +120,14 @@ export class State {
     this.save('autoApply', value);
   }
 
+  get autoHistory() {
+    return this.__state.autoHistory;
+  }
+
+  set autoHistory(value: any) {
+    this.save('autoHistory', value);
+  }
+
   get llm() {
     return this.__state.llm;
   }
@@ -127,6 +157,7 @@ export class State {
 
   set dark(v: boolean) {
     this.__isDark.value = v;
+    this.saveDevtoolsTheme();
   }
 
   saveLLM(item: LLM) {

@@ -3,6 +3,127 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.30](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.29...@vtj/core@0.13.30) (2025-10-11)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.29](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.28...@vtj/core@0.13.29) (2025-09-26)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.28](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.27...@vtj/core@0.13.28) (2025-09-22)
+
+
+### Features
+
+* ✨ 支持expose ([c54f24e](https://gitee.com/newgateway/vtj/commits/c54f24e9edc489128e65ca18d6063fb5b39d7dca))
+
+
+
+
+
+## [0.13.27](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.26...@vtj/core@0.13.27) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.26](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.25...@vtj/core@0.13.26) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.25](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.24...@vtj/core@0.13.25) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 uniapp添加全局uni对象 ([c6a3ee5](https://gitee.com/newgateway/vtj/commits/c6a3ee5c8dc47d840785fd25b920f94a3763fb51))
+
+
+
+
+
+## [0.13.24](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.23...@vtj/core@0.13.24) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.23](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.22...@vtj/core@0.13.23) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.22](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.21...@vtj/core@0.13.22) (2025-09-11)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.21](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.20...@vtj/core@0.13.21) (2025-09-11)
+
+
+### Features
+
+* ✨ 历史记录支持自动/手动/对比/打标记 ([bdf91d2](https://gitee.com/newgateway/vtj/commits/bdf91d2651b84f7b55dd72a1a7a7723d162bea2f))
+
+
+
+
+
+## [0.13.20](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.19...@vtj/core@0.13.20) (2025-09-08)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.19](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.18...@vtj/core@0.13.19) (2025-09-06)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.18](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.17...@vtj/core@0.13.18) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
+## [0.13.17](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.16...@vtj/core@0.13.17) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/core
+
+
+
+
+
 ## [0.13.16](https://gitee.com/newgateway/vtj/compare/@vtj/core@0.13.15...@vtj/core@0.13.16) (2025-09-02)
 
 **Note:** Version bump only for package @vtj/core

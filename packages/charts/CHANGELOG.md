@@ -3,6 +3,118 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.13.30](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.29...@vtj/charts@0.13.30) (2025-10-11)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.29](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.28...@vtj/charts@0.13.29) (2025-09-26)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.28](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.27...@vtj/charts@0.13.28) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.27](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.26...@vtj/charts@0.13.27) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.26](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.25...@vtj/charts@0.13.26) (2025-09-22)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.25](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.24...@vtj/charts@0.13.25) (2025-09-16)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.24](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.23...@vtj/charts@0.13.24) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.23](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.22...@vtj/charts@0.13.23) (2025-09-12)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.22](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.21...@vtj/charts@0.13.22) (2025-09-11)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.21](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.20...@vtj/charts@0.13.21) (2025-09-11)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.20](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.19...@vtj/charts@0.13.20) (2025-09-08)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.19](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.18...@vtj/charts@0.13.19) (2025-09-06)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.18](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.17...@vtj/charts@0.13.18) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
+## [0.13.17](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.16...@vtj/charts@0.13.17) (2025-09-05)
+
+**Note:** Version bump only for package @vtj/charts
+
+
+
+
+
 ## [0.13.16](https://gitee.com/newgateway/vtj/compare/@vtj/charts@0.13.15...@vtj/charts@0.13.16) (2025-09-02)
 
 **Note:** Version bump only for package @vtj/charts
